@@ -1,0 +1,47 @@
+---
+export interface Dienst {
+  name: string;
+  description: string;
+  icon: string;
+  href?: string;
+}
+
+export interface Props {
+  heading: string;
+  diensten: Dienst[];
+}
+
+const { heading, diensten } = Astro.props;
+---
+
+<section id="diensten" class="py-[112px]" style="background: rgba(240, 242, 244, 0.5);">
+  <div class="max-w-[1320px] mx-auto px-6">
+    <div class="mb-12">
+      <span class="text-[13px] font-semibold tracking-widest uppercase text-[hsl(211,62%,47%)]">
+        WAT WIJ DOEN
+      </span>
+      <h2 class="text-[42px] font-normal text-[hsl(220,19%,15%)] mt-2">
+        {heading}
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {diensten.map((dienst) => (
+        <div class="bg-white rounded-lg border border-[hsl(210,15%,90%)] p-6 hover:shadow-md transition-shadow">
+          <div class="w-10 h-10 rounded-lg bg-[hsl(211,62%,47%)]/10 flex items-center justify-center mb-4" aria-hidden="true">
+            <svg class="w-5 h-5 text-[hsl(211,62%,47%)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d={dienst.icon} />
+            </svg>
+          </div>
+          <h3 class="text-[18px] font-bold text-[hsl(220,19%,15%)] mb-2">{dienst.name}</h3>
+          <p class="text-[14px] leading-[22px] text-[hsl(219,10%,45%)] mb-4">{dienst.description}</p>
+          {dienst.href && (
+            <a href={dienst.href} class="text-[14px] font-semibold text-[hsl(211,62%,47%)] hover:text-[hsl(211,62%,37%)] transition-colors">
+              Meer info →
+            </a>
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

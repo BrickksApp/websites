@@ -1,0 +1,354 @@
+[
+  {
+    "url": "https://pagesmith-cdn.com/ba5d94c5/images/f62469035_Foto_04-05-2026_om_1545-removebg-preview-640.webp",
+    "altText": "Logo",
+    "context": "Diensten",
+    "isLogo": true,
+    "originalWidth": 738,
+    "originalHeight": 338,
+    "variants": [
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/f62469035_Foto_04-05-2026_om_1545-removebg-preview-640.webp",
+        "width": 640
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/f62469035_Foto_04-05-2026_om_1545-removebg-preview-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  {
+    "url": "https://pagesmith-cdn.com/ba5d94c5/images/d5002cb36_Foto04-05-2026om1824-1024.webp",
+    "altText": "Construction site",
+    "context": "Schilderwerk, verbouwing, nieuwbouw & meer -- zakelijk of particulier. Groot of klein, wij regelen h",
+    "isLogo": false,
+    "originalWidth": 1024,
+    "originalHeight": 601,
+    "variants": [
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/d5002cb36_Foto04-05-2026om1824-1024.webp",
+        "width": 1024
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/d5002cb36_Foto04-05-2026om1824-768.webp",
+        "width": 768
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/d5002cb36_Foto04-05-2026om1824-640.webp",
+        "width": 640
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/d5002cb36_Foto04-05-2026om1824-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  {
+    "url": "https://pagesmith-cdn.com/ba5d94c5/images/e6a9a2db2_image-1024.webp",
+    "altText": "Kinderopvang",
+    "context": "Section: Recente projecten | Zakelijk · Nieuwbouw",
+    "isLogo": false,
+    "originalWidth": 1024,
+    "originalHeight": 767,
+    "variants": [
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/e6a9a2db2_image-1024.webp",
+        "width": 1024
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/e6a9a2db2_image-768.webp",
+        "width": 768
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/e6a9a2db2_image-640.webp",
+        "width": 640
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/e6a9a2db2_image-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  {
+    "url": "https://pagesmith-cdn.com/ba5d94c5/images/81d323c05_image-1024.webp",
+    "altText": "Appartementen",
+    "context": "Section: Kinderopvang | Woningbouw · Nieuwbouw 4 foto's",
+    "isLogo": false,
+    "originalWidth": 1024,
+    "originalHeight": 978,
+    "variants": [
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/81d323c05_image-1024.webp",
+        "width": 1024
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/81d323c05_image-768.webp",
+        "width": 768
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/81d323c05_image-640.webp",
+        "width": 640
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/81d323c05_image-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  {
+    "url": "https://pagesmith-cdn.com/ba5d94c5/images/8469ac645_generated_image-1024.webp",
+    "altText": "Nieuwbouw",
+    "context": "Section: Kwaliteit van begin tot einde. | Van fundering tot oplevering -- wij realiseren uw nieuwbouwwoning of -pand volledig naar wens. Kwali",
+    "isLogo": false,
+    "originalWidth": 1024,
+    "originalHeight": 1024,
+    "variants": [
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/8469ac645_generated_image-1024.webp",
+        "width": 1024
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/8469ac645_generated_image-768.webp",
+        "width": 768
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/8469ac645_generated_image-640.webp",
+        "width": 640
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/8469ac645_generated_image-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  {
+    "url": "https://pagesmith-cdn.com/ba5d94c5/images/d2145a588_generated_image-1024.webp",
+    "altText": "Ruwbouw",
+    "context": "Section: Nieuwbouw | Wij verzorgen de complete ruwbouw: fundering, muren, vloeren en dak. Solide en vakkundig uitgevoerd ",
+    "isLogo": false,
+    "originalWidth": 1024,
+    "originalHeight": 1024,
+    "variants": [
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/d2145a588_generated_image-1024.webp",
+        "width": 1024
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/d2145a588_generated_image-768.webp",
+        "width": 768
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/d2145a588_generated_image-640.webp",
+        "width": 640
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/d2145a588_generated_image-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  {
+    "url": "https://pagesmith-cdn.com/ba5d94c5/images/636ac591c_generated_image-1024.webp",
+    "altText": "Renovatie",
+    "context": "Section: Ruwbouw | Uw bestaande woning of pand vernieuwen? Wij renoveren van badkamer tot gevelbekleding -- stijlvol, d",
+    "isLogo": false,
+    "originalWidth": 1024,
+    "originalHeight": 1024,
+    "variants": [
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/636ac591c_generated_image-1024.webp",
+        "width": 1024
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/636ac591c_generated_image-768.webp",
+        "width": 768
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/636ac591c_generated_image-640.webp",
+        "width": 640
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/636ac591c_generated_image-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  {
+    "url": "https://pagesmith-cdn.com/ba5d94c5/images/bd53fed60_generated_image-1024.webp",
+    "altText": "Aan- & Uitbouw",
+    "context": "Section: Renovatie | Meer ruimte nodig? Wij realiseren aan- en uitbouwen die perfect aansluiten op uw bestaande woning, v",
+    "isLogo": false,
+    "originalWidth": 1024,
+    "originalHeight": 1024,
+    "variants": [
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/bd53fed60_generated_image-1024.webp",
+        "width": 1024
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/bd53fed60_generated_image-768.webp",
+        "width": 768
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/bd53fed60_generated_image-640.webp",
+        "width": 640
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/bd53fed60_generated_image-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  {
+    "url": "https://pagesmith-cdn.com/ba5d94c5/images/e41f0e834_generated_image-1024.webp",
+    "altText": "Afbouw",
+    "context": "Section: Aan- & Uitbouw | De finishing touch van uw bouwproject. Wij verzorgen de complete afbouw: stucwerk, vloeren, schilder",
+    "isLogo": false,
+    "originalWidth": 1024,
+    "originalHeight": 1024,
+    "variants": [
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/e41f0e834_generated_image-1024.webp",
+        "width": 1024
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/e41f0e834_generated_image-768.webp",
+        "width": 768
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/e41f0e834_generated_image-640.webp",
+        "width": 640
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/e41f0e834_generated_image-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  {
+    "url": "https://pagesmith-cdn.com/ba5d94c5/images/9d8093bc3_generated_image-1024.webp",
+    "altText": "Zakelijk",
+    "context": "Section: Afbouw | Voor bedrijven verzorgen wij verbouwingen, nieuwbouw en renovatie van kantoren, winkels en bedrijfsp",
+    "isLogo": false,
+    "originalWidth": 1024,
+    "originalHeight": 1024,
+    "variants": [
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/9d8093bc3_generated_image-1024.webp",
+        "width": 1024
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/9d8093bc3_generated_image-768.webp",
+        "width": 768
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/9d8093bc3_generated_image-640.webp",
+        "width": 640
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/9d8093bc3_generated_image-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  {
+    "url": "https://pagesmith-cdn.com/ba5d94c5/images/33b0048eb_generated_image-1024.webp",
+    "altText": "Engineers reviewing blueprints",
+    "context": "Section: Zakelijk | Over Ons",
+    "isLogo": false,
+    "originalWidth": 1024,
+    "originalHeight": 1024,
+    "variants": [
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/33b0048eb_generated_image-1024.webp",
+        "width": 1024
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/33b0048eb_generated_image-768.webp",
+        "width": 768
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/33b0048eb_generated_image-640.webp",
+        "width": 640
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/33b0048eb_generated_image-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  {
+    "url": "https://pagesmith-cdn.com/ba5d94c5/images/b979c12ac_image-1024.webp",
+    "altText": "BouwGarant",
+    "context": "Section: Vertrouwen van duizenden klanten | 25+",
+    "isLogo": false,
+    "originalWidth": 1024,
+    "originalHeight": 576,
+    "variants": [
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/b979c12ac_image-1024.webp",
+        "width": 1024
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/b979c12ac_image-768.webp",
+        "width": 768
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/b979c12ac_image-640.webp",
+        "width": 640
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/b979c12ac_image-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  {
+    "url": "https://pagesmith-cdn.com/ba5d94c5/images/a8a51ab43_generated_image-1024.webp",
+    "altText": "Construction process",
+    "context": "Section: Heeft u een project te bespreken? | 01",
+    "isLogo": false,
+    "originalWidth": 1024,
+    "originalHeight": 1024,
+    "variants": [
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/a8a51ab43_generated_image-1024.webp",
+        "width": 1024
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/a8a51ab43_generated_image-768.webp",
+        "width": 768
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/a8a51ab43_generated_image-640.webp",
+        "width": 640
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/a8a51ab43_generated_image-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  {
+    "url": "https://pagesmith-cdn.com/ba5d94c5/images/cbcc2dc18_Foto_04-05-2026_om_1817-removebg-preview-768.webp",
+    "altText": "Klantenoordelen.nl",
+    "context": "Section: Oplevering & Nazorg | Echte beoordelingen van tevreden klanten",
+    "isLogo": false,
+    "originalWidth": 876,
+    "originalHeight": 285,
+    "variants": [
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/cbcc2dc18_Foto_04-05-2026_om_1817-removebg-preview-768.webp",
+        "width": 768
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/cbcc2dc18_Foto_04-05-2026_om_1817-removebg-preview-640.webp",
+        "width": 640
+      },
+      {
+        "url": "https://pagesmith-cdn.com/ba5d94c5/images/cbcc2dc18_Foto_04-05-2026_om_1817-removebg-preview-320.webp",
+        "width": 320
+      }
+    ]
+  }
+]

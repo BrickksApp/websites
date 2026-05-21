@@ -1,0 +1,88 @@
+---
+const services = [
+  {
+    title: "Nieuwbouw",
+    image: "https://pagesmith-cdn.com/ba5d94c5/images/8469ac645_generated_image-1024.webp",
+    description: "Van fundering tot oplevering — wij realiseren uw nieuwbouwwoning of -pand volledig naar wens. Kwaliteit en maatwerk staan centraal.",
+    link: "/diensten/nieuwbouw",
+  },
+  {
+    title: "Ruwbouw",
+    image: "https://pagesmith-cdn.com/ba5d94c5/images/d2145a588_generated_image-1024.webp",
+    description: "Wij verzorgen de complete ruwbouw: fundering, muren, vloeren en dak. Solide en vakkundig uitgevoerd als basis voor elk bouwproject.",
+    link: "/diensten/ruwbouw",
+  },
+  {
+    title: "Renovatie",
+    image: "https://pagesmith-cdn.com/ba5d94c5/images/636ac591c_generated_image-1024.webp",
+    description: "Uw bestaande woning of pand vernieuwen? Wij renoveren van badkamer tot gevelbekleding — stijlvol, duurzaam en op maat.",
+    link: "/diensten/renovatie",
+  },
+  {
+    title: "Aan- & Uitbouw",
+    image: "https://pagesmith-cdn.com/ba5d94c5/images/bd53fed60_generated_image-1024.webp",
+    description: "Meer ruimte nodig? Wij realiseren aan- en uitbouwen die perfect aansluiten op uw bestaande woning, van ontwerp tot afwerking.",
+    link: "/diensten/aan-uitbouw",
+  },
+  {
+    title: "Afbouw",
+    image: "https://pagesmith-cdn.com/ba5d94c5/images/e41f0e834_generated_image-1024.webp",
+    description: "De finishing touch van uw bouwproject. Wij verzorgen de complete afbouw: stucwerk, vloeren, schilderwerk en installatieafwerking.",
+    link: "/diensten/afbouw",
+  },
+  {
+    title: "Zakelijk",
+    image: "https://pagesmith-cdn.com/ba5d94c5/images/9d8093bc3_generated_image-1024.webp",
+    description: "Voor bedrijven verzorgen wij verbouwingen, nieuwbouw en renovatie van kantoren, winkels en bedrijfspanden. Professioneel en op tijd.",
+    link: "/diensten/zakelijk",
+  },
+];
+---
+<section id="diensten" class="py-[112px]" style="background: rgba(240, 242, 244, 0.5);">
+  <div class="max-w-[1320px] mx-auto px-6">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+      <div class="reveal">
+        <span class="inline-block text-[hsl(211,62%,47%)] text-sm font-semibold uppercase tracking-widest mb-3">WAT WIJ DOEN</span>
+        <h2 class="text-[42px] font-normal leading-tight" style="color: hsl(220, 19%, 15%);">Kwaliteit van begin tot einde.</h2>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <a
+          href="/#diensten"
+          class="inline-block border-2 text-[14px] font-semibold rounded-lg px-6 py-3 transition-colors hover:text-white"
+          style="border-color: hsl(211,62%,47%); color: hsl(211,62%,47%);"
+          onmouseover="this.style.backgroundColor='hsl(211,62%,47%)'"
+          onmouseout="this.style.backgroundColor='transparent'"
+        >
+          Alle diensten
+        </a>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {services.map((service, i) => (
+        <article class={`bg-white rounded-lg overflow-hidden border border-[hsl(210,15%,90%)] hover:shadow-lg transition-shadow reveal reveal-delay-${(i % 3) + 1}`}>
+          <div class="overflow-hidden" style="aspect-ratio: 408/192;">
+            <img
+              src={service.image}
+              alt={service.title}
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              width="408"
+              height="192"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-[18px] font-bold mb-2" style="color: hsl(220, 19%, 15%);">{service.title}</h3>
+            <p class="text-[14px] leading-[22.75px] mb-4" style="color: hsl(219, 10%, 45%);">{service.description}</p>
+            <a
+              href={service.link}
+              class="text-[14px] font-semibold transition-opacity hover:opacity-70"
+              style="color: hsl(211, 62%, 47%);"
+            >
+              Meer info →
+            </a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

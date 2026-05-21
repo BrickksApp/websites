@@ -1,0 +1,197 @@
+{
+  "success": true,
+  "url": "https://asp-aannemersbedrijf.com/",
+  "structured": {
+    "title": "\n   A.S.P Aannemersbedrijf\n  ",
+    "description": "A.S.P Aannemersbedrijf  manages 1 data type including contact aanvraags. Helps you organize, track, and share your work in 1 place for teams and solo users.",
+    "url": "https://asp-aannemersbedrijf.com/",
+    "imageCount": 52,
+    "branding": {
+      "colors": {
+        "primary": "#2E75C3",
+        "secondary": "#1F242E",
+        "accent": "#2E75C3",
+        "background": "#FFFFFF",
+        "textPrimary": "#1A2540",
+        "link": "#1A2540"
+      },
+      "typography": {
+        "fontFamilies": {
+          "primary": "Plus Jakarta Sans",
+          "heading": "Plus Jakarta Sans"
+        },
+        "fontStacks": {
+          "heading": [
+            "Plus Jakarta Sans",
+            "sans-serif"
+          ],
+          "body": [
+            "Plus Jakarta Sans",
+            "sans-serif"
+          ],
+          "paragraph": [
+            "Plus Jakarta Sans",
+            "sans-serif"
+          ]
+        },
+        "fontSizes": {
+          "h1": "72px",
+          "h2": "42px",
+          "body": "18px"
+        }
+      },
+      "spacing": {
+        "baseUnit": 4,
+        "borderRadius": "0px"
+      },
+      "logo": "https://media.base44.com/images/public/69f89d722c4ff0d2210778e3/f62469035_Foto_04-05-2026_om_1545-removebg-preview.png",
+      "favicon": "https://media.base44.com/images/public/69f89d722c4ff0d2210778e3/26d26192d_Foto04-05-2026om1545.jpeg",
+      "faviconCdn": "https://pagesmith-cdn.com/ba5d94c5/images/26d26192d_Foto04-05-2026om1545-1536.webp"
+    },
+    "pages": [
+      {
+        "slug": "index",
+        "path": "/",
+        "title": "\n   A.S.P Aannemersbedrijf\n  ",
+        "file": "data/pages/index.md"
+      }
+    ],
+    "availablePages": [
+      {
+        "path": "/Overons/",
+        "label": "Overons",
+        "slug": "Overons",
+        "scraped": false
+      },
+      {
+        "path": "/Werkwijze/",
+        "label": "Werkwijze",
+        "slug": "Werkwijze",
+        "scraped": false
+      },
+      {
+        "path": "/Werkgebieden/",
+        "label": "Werkgebieden",
+        "slug": "Werkgebieden",
+        "scraped": false
+      },
+      {
+        "path": "/Diensten/",
+        "label": "Diensten",
+        "slug": "Diensten",
+        "scraped": false
+      },
+      {
+        "path": "/diensten/nieuwbouw/",
+        "label": "Nieuwbouw",
+        "slug": "diensten-nieuwbouw",
+        "scraped": false
+      },
+      {
+        "path": "/diensten/ruwbouw/",
+        "label": "Ruwbouw",
+        "slug": "diensten-ruwbouw",
+        "scraped": false
+      },
+      {
+        "path": "/diensten/renovatie/",
+        "label": "Renovatie",
+        "slug": "diensten-renovatie",
+        "scraped": false
+      },
+      {
+        "path": "/diensten/aan-uitbouw/",
+        "label": "Aan Uitbouw",
+        "slug": "diensten-aan-uitbouw",
+        "scraped": false
+      },
+      {
+        "path": "/diensten/afbouw/",
+        "label": "Afbouw",
+        "slug": "diensten-afbouw",
+        "scraped": false
+      },
+      {
+        "path": "/diensten/zakelijk/",
+        "label": "Zakelijk",
+        "slug": "diensten-zakelijk",
+        "scraped": false
+      },
+      {
+        "path": "/werkgebieden/zaanstreek/",
+        "label": "Zaanstreek",
+        "slug": "werkgebieden-zaanstreek",
+        "scraped": false
+      },
+      {
+        "path": "/werkgebieden/amsterdam/",
+        "label": "Amsterdam",
+        "slug": "werkgebieden-amsterdam",
+        "scraped": false
+      },
+      {
+        "path": "/werkgebieden/haarlem/",
+        "label": "Haarlem",
+        "slug": "werkgebieden-haarlem",
+        "scraped": false
+      },
+      {
+        "path": "/werkgebieden/utrecht/",
+        "label": "Utrecht",
+        "slug": "werkgebieden-utrecht",
+        "scraped": false
+      },
+      {
+        "path": "/werkgebieden/gouda/",
+        "label": "Gouda",
+        "slug": "werkgebieden-gouda",
+        "scraped": false
+      },
+      {
+        "path": "/werkgebieden/almeer/",
+        "label": "Almeer",
+        "slug": "werkgebieden-almeer",
+        "scraped": false
+      },
+      {
+        "path": "/werkgebieden/hilversum/",
+        "label": "Hilversum",
+        "slug": "werkgebieden-hilversum",
+        "scraped": false
+      },
+      {
+        "path": "/werkgebieden/waterland/",
+        "label": "Waterland",
+        "slug": "werkgebieden-waterland",
+        "scraped": false
+      },
+      {
+        "path": "/export-website/",
+        "label": "Export Website",
+        "slug": "export-website",
+        "scraped": false
+      },
+      {
+        "path": "/diensten/Zakelijk/",
+        "label": "Diensten | A.S.P Aannemersbedrijf",
+        "slug": "diensten-Zakelijk",
+        "scraped": false
+      },
+      {
+        "path": "/diensten/Ruwbouw/",
+        "label": "Diensten | A.S.P Aannemersbedrijf",
+        "slug": "diensten-Ruwbouw",
+        "scraped": false
+      }
+    ]
+  },
+  "metadata": {
+    "scraper": "firecrawl-crawl-endpoint",
+    "timestamp": "2026-05-21T13:38:59.599Z",
+    "homepageContentLength": 10216,
+    "imageCount": 52,
+    "hasBranding": true,
+    "pagesDiscovered": 21,
+    "pagesScraped": 1
+  }
+}

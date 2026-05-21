@@ -1,0 +1,48 @@
+---
+const reasons = [
+  {
+    title: "Lokale Kennis",
+    description: "We kennen alle gemeentes, regelgeving en bouweisen in Noord-Holland en omgeving.",
+  },
+  {
+    title: "Snelle Respons",
+    description: "Als lokaal bedrijf reageren we snel en staan we altijd voor je beschikbaar.",
+  },
+  {
+    title: "25+ Jaar Ervaring",
+    description: "Honderden projecten in jouw regio — we weten wat werkt in jouw buurt.",
+  },
+  {
+    title: "Vergunningen Regelen",
+    description: "We kennen alle ambtenaren en processen — vergunningen verlopen soepel.",
+  },
+  {
+    title: "Referenties Dichtbij",
+    description: "Tevreden klanten in jouw wijk — vraag ze gerust om feedback.",
+  },
+  {
+    title: "Op Tijd, Binnen Budget",
+    description: "Betrouwbaarheid is ons merk — in alle gebieden waar we werken.",
+  },
+];
+---
+<section class="py-[112px]" style="background-color: hsl(223, 42%, 18%);">
+  <div class="max-w-[1320px] mx-auto px-6">
+    <div class="text-center mb-12 reveal">
+      <h2 class="text-[42px] font-semibold text-white mb-3">Waarom A.S.P in Jouw Regio?</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {reasons.map((reason, i) => (
+        <div class={`p-6 rounded-lg border reveal reveal-delay-${(i % 3) + 1}`} style="border-color: hsl(223, 42%, 28%); background-color: hsl(223, 42%, 22%);">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center mb-4" style="background-color: hsl(211, 62%, 47%);">
+            <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <h3 class="text-[18px] font-bold text-white mb-2">{reason.title}</h3>
+          <p class="text-[14px] leading-[22.75px]" style="color: rgba(255,255,255,0.65);">{reason.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

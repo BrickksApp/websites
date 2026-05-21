@@ -1,0 +1,41 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Hero from '@/components/home/Hero.astro';
+import RecentProjects from '@/components/home/RecentProjects.astro';
+import ServicesGrid from '@/components/home/ServicesGrid.astro';
+import AboutUs from '@/components/home/AboutUs.astro';
+import TrustGarant from '@/components/home/TrustGarant.astro';
+import ProcessAccordion from '@/components/home/ProcessAccordion.astro';
+import Testimonials from '@/components/home/Testimonials.astro';
+import ContactForm from '@/components/home/ContactForm.astro';
+import { SITE } from '@/config/site';
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": SITE.name,
+  "description": SITE.description,
+  "url": SITE.url,
+  "telephone": "06 41258151",
+  "email": "info@asp-aannemersbedrijf.nl",
+  "areaServed": "Noord-Holland",
+  "priceRange": "$$",
+  "logo": "https://pagesmith-cdn.com/ba5d94c5/images/f62469035_Foto_04-05-2026_om_1545-removebg-preview-640.webp",
+  "sameAs": [
+    SITE.socials.facebook,
+    SITE.socials.instagram,
+    SITE.socials.linkedin
+  ]
+};
+---
+
+<BaseLayout title={SITE.title} description={SITE.description} jsonLd={jsonLd}>
+  <Hero />
+  <RecentProjects />
+  <ServicesGrid />
+  <AboutUs />
+  <TrustGarant />
+  <ProcessAccordion />
+  <Testimonials />
+  <ContactForm />
+</BaseLayout>

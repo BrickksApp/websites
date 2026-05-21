@@ -1,0 +1,125 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import WerkgebiedHero from '../../components/werkgebieden/WerkgebiedHero.astro';
+import WerkgebiedDiensten from '../../components/werkgebieden/WerkgebiedDiensten.astro';
+import WerkgebiedVoordelen from '../../components/werkgebieden/WerkgebiedVoordelen.astro';
+import WerkgebiedFAQ from '../../components/werkgebieden/WerkgebiedFAQ.astro';
+import WerkgebiedCTA from '../../components/werkgebieden/WerkgebiedCTA.astro';
+
+const diensten = [
+  {
+    name: 'Grachtenpand renovatie',
+    description: 'Renovatie van historische Amsterdamse grachtenpanden met respect voor erfgoed en regelgeving.',
+    icon: 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4',
+  },
+  {
+    name: 'Nieuwbouw',
+    description: 'Moderne woningbouw en appartementen op beschikbare kavels in Amsterdam en randgemeenten.',
+    icon: 'M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6',
+    href: '/diensten/nieuwbouw/',
+  },
+  {
+    name: 'Ruwbouw',
+    description: 'Professioneel ruwbouwwerk voor alle projectgroottes in Amsterdam en omgeving.',
+    icon: 'M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z',
+    href: '/diensten/ruwbouw/',
+  },
+  {
+    name: 'Interieur renovatie',
+    description: 'Badkamer, keuken, slaapkamer — volledig interieurontwerp en uitvoering in Amsterdam.',
+    icon: 'M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z',
+    href: '/diensten/renovatie/',
+  },
+  {
+    name: 'Uitbreiding',
+    description: 'Aanbouwen, dakkapellen, zolderuitbreiding voor meer ruimte in uw Amsterdamse woning.',
+    icon: 'M12 4v16m8-8H4',
+    href: '/diensten/aan-uitbouw/',
+  },
+  {
+    name: 'Zakenruimte',
+    description: 'Kantoorverhoudingen en commerciële ruimtes professioneel verbouwen in Amsterdam.',
+    icon: 'M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z',
+    href: '/diensten/zakelijk/',
+  },
+];
+
+const voordelen = [
+  {
+    title: 'Ervaring met erfgoed',
+    description: 'Grachtenpanden, monumentaal werk — we werken met Erfgoeddiensten en respecteren Amsterdam\'s karakter. Geen vergunningsproblemen, wel vlot werk.',
+  },
+  {
+    title: 'Milieuvriendelijk bouwen',
+    description: 'Amsterdam kiest voor duurzaam. Isolatie, zonnepanelen, groene daken — wij bouwen toekomstbestendig voor de Amsterdamse regelgeving.',
+  },
+  {
+    title: 'Minimale overlast',
+    description: 'In een drukke stad is planning cruciaal. Wij zorgen dat je leven doorloopt en de buurt niet hinder ondervindt — efficiënt en respectvol.',
+  },
+  {
+    title: '4.9/5 sterren',
+    description: '100+ tevreden Amsterdamse klanten. Check onze beoordelingen — van grachtenpand tot modern appartement, we leveren steeds topkwaliteit.',
+  },
+];
+
+const faqs = [
+  {
+    question: 'Werken jullie in Amsterdam-Centrum, Noord en de randen?',
+    answer: 'Ja, we zijn overal in Amsterdam actief. Van Zuid tot Noord, van centrum tot Bijlmer — we kennen alle wijken en hun specifieke uitdagingen zoals erfgoedregels, smalle stegen en bouwvergunningen.',
+  },
+  {
+    question: 'Hoe gaan jullie om met beperkte ruimte in Amsterdam?',
+    answer: 'Werken in Amsterdam vraagt om creativiteit en precisie. We hebben jarenlange ervaring met krappe stegen, rijwoningen en appartementen. We plannen alles tot in de puntjes — materiaallevering, opslagruimte en werktijden — om overlast te minimaliseren.',
+  },
+  {
+    question: 'Zijn er extra kosten voor Amsterdamse vergunningen?',
+    answer: 'Vergunningskosten zijn afhankelijk van het project en de gemeente. We begeleiden u volledig door het vergunningentraject en zorgen dat alles correct en efficiënt verloopt. De kosten worden transparant in de offerte opgenomen.',
+  },
+  {
+    question: 'Hoe populair is duurzame renovatie in Amsterdam?',
+    answer: 'Duurzaam renoveren is in Amsterdam enorm populair en door gemeentelijke subsidies ook financieel aantrekkelijk. We zijn gespecialiseerd in energieneutrale renovaties, warmtepompen, zonnepanelen en dakisolatie in Amsterdamse woningen.',
+  },
+  {
+    question: 'Kunnen jullie historische panden in Amsterdam renoveren?',
+    answer: 'Absoluut. We hebben uitgebreide ervaring met monumentale en historisch waardevolle panden in Amsterdam. We werken nauw samen met de Amsterdamse Erfgoeddienst om authenticiteit te bewaren en vergunningen correct te regelen.',
+  },
+  {
+    question: 'Hoeveel klanten in Amsterdam hebben jullie gerenoveerd?',
+    answer: 'We hebben meer dan 100 projecten in Amsterdam afgerond — van kleine badkamerrenovaties tot complete grachtenpandverbouwingen. Vraag gerust naar referenties in uw buurt.',
+  },
+];
+---
+
+<BaseLayout
+  title="Bouwbedrijf Amsterdam | Renovatie Grachtenpanden | A.S.P Aannemersbedrijf"
+  description="A.S.P Aannemersbedrijf actief in Amsterdam. Renovatie van grachtenpanden, nieuwbouw, interieur — met respect voor erfgoed en Amsterdamse regelgeving. Vraag een offerte aan."
+>
+  <WerkgebiedHero
+    title="Bouw & Renovatie in Amsterdam"
+    subtitle="Van Grachtenpanden tot nieuwbouw. We kennen Amsterdam, het karakter en alle regelgeving — voor een soepel project zonder zorgen."
+    location="Amsterdam"
+    image="https://pagesmith-cdn.com/ba5d94c5/images/747527730_generated_image-1024.webp"
+    imageAlt="Bouw en renovatie in Amsterdam"
+    ctaText="Vraag offerte aan"
+    ctaHref="#footer"
+  />
+
+  <WerkgebiedDiensten
+    heading="Wat doen we in Amsterdam?"
+    diensten={diensten}
+  />
+
+  <WerkgebiedVoordelen
+    heading="Waarom A.S.P voor uw Amsterdamse project?"
+    voordelen={voordelen}
+  />
+
+  <WerkgebiedFAQ faqs={faqs} />
+
+  <WerkgebiedCTA
+    city="Amsterdam"
+    heading="Bouwproject in Amsterdam?"
+    subtext="Laten we uw plan bespreken — zonder verplichtingen, met vakmanschap en vertrouwen."
+  />
+</BaseLayout>

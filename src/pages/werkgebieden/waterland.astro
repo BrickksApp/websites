@@ -1,0 +1,121 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import WerkgebiedHero from '../../components/werkgebieden/WerkgebiedHero.astro';
+import WerkgebiedDiensten from '../../components/werkgebieden/WerkgebiedDiensten.astro';
+import WerkgebiedVoordelen from '../../components/werkgebieden/WerkgebiedVoordelen.astro';
+import WerkgebiedFAQ from '../../components/werkgebieden/WerkgebiedFAQ.astro';
+import WerkgebiedCTA from '../../components/werkgebieden/WerkgebiedCTA.astro';
+
+const diensten = [
+  {
+    name: 'Erfgoed renovatie',
+    description: 'Historische huizen restaureren met authenticiteit — met behoud van het Waterlands karakter.',
+    icon: 'M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z',
+  },
+  {
+    name: 'Monument onderhoud',
+    description: 'Beschermde monumenten vakkundig beheerd — authentieke materialen, vakkundige uitvoering.',
+    icon: 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z',
+  },
+  {
+    name: 'Karakterbehoud',
+    description: 'Modernisering met behoud van dorpskarakter — moderne comfort in traditionele Waterland huizen.',
+    icon: 'M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z',
+  },
+  {
+    name: 'Interieur',
+    description: 'Badkamer, keuken — modern interieur in bestaand karakter van uw Waterlands huis.',
+    icon: 'M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z',
+    href: '/diensten/renovatie/',
+  },
+  {
+    name: 'Duurzaam upgrade',
+    description: 'Groene dakwerk, isolatie, moderne installaties — duurzaam bouwen in Waterland.',
+    icon: 'M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064',
+  },
+  {
+    name: 'Waterwerk',
+    description: 'Waterwerken en funderingen in waterrijk gebied — gespecialiseerd werk voor de Waterland regio.',
+    icon: 'M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10',
+  },
+];
+
+const voordelen = [
+  {
+    title: 'Kennis van het Waterlands erfgoed',
+    description: 'Pittoreske dorpen zoals Volendam, Marken en Edam hebben bijzondere architectuur en erfgoedregels. We werken met kennis en respect voor deze unieke omgeving.',
+  },
+  {
+    title: 'Ervaring met natte funderingen',
+    description: 'Bouwen in een waterrijk gebied stelt speciale eisen aan funderingen en constructies. Onze experts hebben ruime ervaring met de specifieke uitdagingen van Waterland.',
+  },
+  {
+    title: 'Authentieke materialen',
+    description: 'We gebruiken materialen die passen bij de lokale bouwstijl en erfgoedregels — zo behoudt uw woning zijn karakter en voldoet het aan alle vereisten.',
+  },
+  {
+    title: '25+ jaar ervaring in Noord-Holland',
+    description: 'Al meer dan 25 jaar actief in Noord-Holland, inclusief Waterland. We kennen de regio, de gemeenten en de lokale bouwcultuur door en door.',
+  },
+];
+
+const faqs = [
+  {
+    question: 'Werken jullie in Volendam, Marken en Waterland?',
+    answer: 'Ja, Waterland is bijzonder. Pittoreske dorpen met veel karaktervolle huizen — we bouwen met respect voor erfgoed. We zijn actief in Volendam, Marken, Edam, Monnickendam, Purmerend en heel Waterland.',
+  },
+  {
+    question: 'Hoe gaan jullie om met historische Waterland-huizen?',
+    answer: 'Historische huizen in Waterland vereisen speciale kennis. We werken met erfgoeddeskundigen, gebruiken authentieke materialen en respecteren de bouwhistorie. Alle werkzaamheden voldoen aan de eisen van de erfgoedcommissie.',
+  },
+  {
+    question: 'Wat maakt bouw in Waterland speciaal?',
+    answer: 'Waterland kent natte bodems, erfgoedregels en een uniek dorpskarakter. Funderingen en constructies vereisen specialistische kennis. Bovendien zijn veel panden beschermd monument, wat extra zorgvuldigheid vraagt.',
+  },
+  {
+    question: 'Kunnen jullie duurzaam bouwen in Waterland?',
+    answer: 'Absoluut. We passen duurzame technieken toe die passen binnen de erfgoedregels — dakisolatie, moderne installaties en energiezuinige systemen die het karakter van uw woning bewaren.',
+  },
+  {
+    question: 'Hoeveel projecten in Waterland?',
+    answer: 'We hebben meerdere projecten in Waterland afgerond, van erfgoedrenovaties in Volendam tot moderne verbouwingen in Purmerend. Vraag naar onze referenties in uw specifieke gemeente.',
+  },
+  {
+    question: 'Hoe snel kunnen jullie beginnen?',
+    answer: 'Na het intakegesprek en de offerte stellen we direct een planning op. Afhankelijk van de beschikbaarheid en de complexiteit van het project kunnen we doorgaans binnen enkele weken starten.',
+  },
+];
+---
+
+<BaseLayout
+  title="Bouwbedrijf Waterland | Volendam, Marken, Edam | A.S.P Aannemersbedrijf"
+  description="A.S.P Aannemersbedrijf actief in Waterland — Volendam, Marken, Edam en omgeving. Erfgoedrenovatie, karakterbehoud en vakkundig bouwwerk met respect voor de regio."
+>
+  <WerkgebiedHero
+    title="Vakkundig bouwen in Waterland"
+    subtitle="Volendam, Marken, Edam — bouw met respect voor karakter en erfgoed. Vakmanschap dat past bij de bijzondere Waterland omgeving."
+    location="Waterland & Noord-Amsterdam"
+    image="https://pagesmith-cdn.com/ba5d94c5/images/1ce5eb049_generated_image-1024.webp"
+    imageAlt="Vakkundig bouwen in Waterland"
+    ctaText="Vraag offerte aan"
+    ctaHref="#footer"
+  />
+
+  <WerkgebiedDiensten
+    heading="Bouwdiensten in Waterland"
+    diensten={diensten}
+  />
+
+  <WerkgebiedVoordelen
+    heading="Waarom A.S.P voor uw project in Waterland?"
+    voordelen={voordelen}
+  />
+
+  <WerkgebiedFAQ faqs={faqs} />
+
+  <WerkgebiedCTA
+    city="Waterland"
+    heading="Bouwproject in Waterland?"
+    subtext="Laat ons uw dorp helpen — met vakmanschap en respect voor het karakter van de regio."
+  />
+</BaseLayout>

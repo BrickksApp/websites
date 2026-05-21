@@ -1,0 +1,83 @@
+---
+const faqs = [
+  {
+    question: "Wat maakt A.S.P Aannemersbedrijf anders dan andere aanbieders?",
+    answer: "Met meer dan 25 jaar ervaring en 400+ succesvolle projecten combineren wij vakmanschap met betrouwbaarheid. We leveren altijd op tijd en binnen budget, en onze 10-jarige garantie geeft je zekerheid dat je werk professioneel is uitgevoerd.",
+  },
+  {
+    question: "Hoe lang duurt een typisch bouwproject?",
+    answer: "Dit hangt sterk af van het soort project. Kleine verbouwingen duren gemiddeld 2–4 weken, badkamerrenovaties 3–5 weken, een complete renovatie 2–6 maanden, en nieuwbouwprojecten 3–12 maanden. We geven altijd een realistische planning bij de offerte.",
+  },
+  {
+    question: "Wat is inbegrepen in jullie garantie?",
+    answer: "Onze 10-jaar garantie dekt structurele elementen (ruwbouw, muren, vloeren), dak- en gevelwerk, essentiële installaties en aansluitingen, materiaalgebreken en constructiefouten. Alle werkzaamheden worden conform bouwstandaarden uitgevoerd.",
+  },
+  {
+    question: "Verzorgen jullie ook de vergunningen?",
+    answer: "Ja, wij regelen alle benodigde vergunningen bij de gemeente. We kennen de ambtenaren en processen goed, waardoor dit altijd soepel verloopt.",
+  },
+  {
+    question: "Kunnen jullie ook kleine verbouwingen uitvoeren?",
+    answer: "Absoluut. We werken voor zowel kleine verbouwingen als grote nieuwbouwprojecten. Geen project is te klein of te groot voor A.S.P Aannemersbedrijf.",
+  },
+  {
+    question: "Hoe gaat het proces in zijn werk van offerte tot oplevering?",
+    answer: "We starten met een persoonlijk gesprek, maken een gedetailleerde offerte, regelen alle vergunningen, voeren het werk uit met wekelijkse updates, en leveren op met een 10-jaar garantie.",
+  },
+  {
+    question: "Zijn jullie werkzaam in mijn regio?",
+    answer: "We zijn actief in heel Noord-Holland en omgeving, inclusief Amsterdam, Haarlem, Utrecht, Zaanstreek, Gouda, Hilversum en omliggende gebieden tot 60km rond Amsterdam.",
+  },
+  {
+    question: "Wat gebeurt er als er onvoorziene problemen optreden?",
+    answer: "We communiceren direct en transparant bij onverwachte situaties. Je vaste contactpersoon houdt je altijd op de hoogte en we bespreken oplossingen samen voordat we handelen.",
+  },
+  {
+    question: "Hoe kunnen we jullie het beste bereiken voor een aanvraag?",
+    answer: "Bel ons op 06 41258151 of stuur een e-mail naar info@asp-aannemersbedrijf.nl. U kunt ook het contactformulier onderaan deze pagina invullen — we reageren binnen 24 uur.",
+  },
+  {
+    question: "Bieden jullie ook duurzame en milieuvriendelijke bouwmethoden?",
+    answer: "Ja, we werken met moderne technieken en materialen voor een efficiënt en duurzaam eindresultaat. We adviseren u graag over duurzame opties die passen bij uw project en budget.",
+  },
+];
+---
+<section class="py-[112px]" style="background-color: hsl(0, 0%, 100%);">
+  <div class="max-w-[1320px] mx-auto px-6">
+    <div class="max-w-[800px] mx-auto">
+      <div class="text-center mb-12 reveal">
+        <span class="inline-block text-[hsl(211,62%,47%)] text-sm font-semibold uppercase tracking-widest mb-3">Veelgestelde Vragen</span>
+        <h2 class="text-[42px] font-semibold" style="color: hsl(220, 19%, 15%);">Alles wat je moet weten</h2>
+      </div>
+      <div class="space-y-0 border border-[hsl(210,15%,90%)] rounded-lg overflow-hidden">
+        {faqs.map((faq, i) => (
+          <details class="group border-b border-[hsl(210,15%,90%)] last:border-b-0">
+            <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none hover:bg-[hsl(210,15%,98%)] transition-colors">
+              <span class="text-[16px] font-semibold" style="color: hsl(220, 19%, 15%);">{faq.question}</span>
+              <span class="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center transition-transform group-open:rotate-45" style="background-color: hsl(211, 62%, 47%);">
+                <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                </svg>
+              </span>
+            </summary>
+            <div class="px-6 pb-5">
+              <p class="text-[15px] leading-[24px]" style="color: hsl(219, 10%, 45%);">{faq.answer}</p>
+            </div>
+          </details>
+        ))}
+      </div>
+      <div class="text-center mt-8 reveal">
+        <p class="text-[16px] mb-4" style="color: hsl(219, 10%, 45%);">Jouw vraag staat er niet bij?</p>
+        <a
+          href="/Overons/#footer"
+          class="inline-block text-white font-semibold rounded-lg px-6 py-3 text-[14px] transition-colors"
+          style="background-color: hsl(211, 62%, 47%);"
+          onmouseover="this.style.backgroundColor='hsl(211,62%,37%)'"
+          onmouseout="this.style.backgroundColor='hsl(211,62%,47%)'"
+        >
+          Stel je vraag
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

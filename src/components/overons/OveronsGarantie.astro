@@ -1,0 +1,45 @@
+---
+const guaranteeItems = [
+  "Structurele elementen (ruwbouw, muren, vloeren)",
+  "Dak- en gevelwerk",
+  "Essentiële installaties en aansluitingen",
+  "Alle werkzaamheden conform bouwstandaarden",
+  "Materiaalgebreken en constructiefouten",
+];
+---
+<section class="py-[112px]" style="background-color: hsl(223, 42%, 18%);">
+  <div class="max-w-[1320px] mx-auto px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div class="reveal-left">
+        <span class="inline-block text-[hsl(211,62%,47%)] text-sm font-semibold uppercase tracking-widest mb-4">Onze Belofte</span>
+        <h2 class="text-[42px] font-semibold text-white leading-[1.2] mb-6">10 Jaar Garantie</h2>
+        <p class="text-[18px] leading-[28px] mb-8" style="color: rgba(255,255,255,0.7);">
+          We geven 10 jaar garantie op al onze werkzaamheden. Dit is niet zomaar een getal — het is onze manier om te zeggen: we staan achter ons werk, en jij hoeft je geen zorgen te maken.
+        </p>
+        <ul class="space-y-3 mb-8">
+          {guaranteeItems.map((item) => (
+            <li class="flex items-start gap-3">
+              <span class="mt-1 flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center" style="background-color: hsl(211, 62%, 47%);">
+                <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <span class="text-[16px]" style="color: rgba(255,255,255,0.85);">{item}</span>
+            </li>
+          ))}
+        </ul>
+        <p class="text-[14px] font-semibold italic" style="color: hsl(211, 62%, 47%);">
+          Dit is onze standaard — niet wat extra's. Omdat goed werk niet na 5 jaar slecht wordt.
+        </p>
+      </div>
+      <div class="reveal-right">
+        <img
+          src="https://pagesmith-cdn.com/ba5d94c5/images/10bcb741f_image-1024.webp"
+          alt="Quality craftmanship"
+          class="w-full rounded-lg object-cover"
+          style="max-height: 520px;"
+        />
+      </div>
+    </div>
+  </div>
+</section>

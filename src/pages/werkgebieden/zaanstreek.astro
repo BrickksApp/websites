@@ -1,0 +1,126 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import WerkgebiedHero from '../../components/werkgebieden/WerkgebiedHero.astro';
+import WerkgebiedDiensten from '../../components/werkgebieden/WerkgebiedDiensten.astro';
+import WerkgebiedVoordelen from '../../components/werkgebieden/WerkgebiedVoordelen.astro';
+import WerkgebiedFAQ from '../../components/werkgebieden/WerkgebiedFAQ.astro';
+import WerkgebiedCTA from '../../components/werkgebieden/WerkgebiedCTA.astro';
+
+const diensten = [
+  {
+    name: 'Nieuwbouw',
+    description: 'Complete bouw van woningen en panden in Zaandam en omgeving. Van fundering tot oplevering.',
+    icon: 'M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6',
+    href: '/diensten/nieuwbouw/',
+  },
+  {
+    name: 'Ruwbouw',
+    description: 'Fundaties, muurwerk, vloeren — fundamenteel vakwerk in de Zaanstreek.',
+    icon: 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4',
+    href: '/diensten/ruwbouw/',
+  },
+  {
+    name: 'Renovatie',
+    description: 'Badkamer, keuken, interieur — vernieuw je huis in de Zaanstreek met vakmanschap.',
+    icon: 'M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z',
+    href: '/diensten/renovatie/',
+  },
+  {
+    name: 'Aan- & Uitbouw',
+    description: 'Meer ruimte zonder te verhuizen. Perfect voor groeiende gezinnen in Zaandam.',
+    icon: 'M12 4v16m8-8H4',
+    href: '/diensten/aan-uitbouw/',
+  },
+  {
+    name: 'Afbouw',
+    description: 'Stucwerk, schilderwerk, vloeren — de puntjes op de i voor uw woning in de Zaanstreek.',
+    icon: 'M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z',
+    href: '/diensten/afbouw/',
+  },
+  {
+    name: 'Zakelijk',
+    description: 'Kantoorverbouwingen en bedrijfspanden renovatie in de Zaanstreek en omgeving.',
+    icon: 'M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z',
+    href: '/diensten/zakelijk/',
+  },
+];
+
+const voordelen = [
+  {
+    title: 'Lokale expertise',
+    description: 'We kennen de Zaanstreek sinds 1999. Alle gemeentelijke vereisten, bouwstandaarden en lokale regelgeving — we beheersen het.',
+  },
+  {
+    title: 'Betrouwbaarheid',
+    description: 'Tientallen klanten in Zaandam, Wormerveer en Krommenie — ze bellen ons terug voor het volgende project. Dat zegt genoeg.',
+  },
+  {
+    title: '10-jarige garantie',
+    description: 'Alle werk is gegarandeerd. Dit geeft je rust en zekerheid dat je project vakkundig is uitgevoerd en aan alle normen voldoet.',
+  },
+  {
+    title: 'Duurzaam bouwen',
+    description: 'Moderne, energiezuinige systemen. Je bouwt niet alleen voor nu, maar ook voor morgen. Klimaatbestendig en toekomstproof.',
+  },
+];
+
+const faqs = [
+  {
+    question: 'Werken jullie in Zaandam, Wormerveer en omliggende dorpen?',
+    answer: 'Ja, de Zaanstreek is één van onze kerngebieden met meer dan 25 jaar ervaring. Van nieuwbouw tot renovatie — we kennen de regio en de gemeente vereisten perfect. We zijn actief in Zaandam, Wormerveer, Krommenie, Assendelft en omliggende dorpen.',
+  },
+  {
+    question: 'Hoe lang duren bouwprojecten in de Zaanstreek gemiddeld?',
+    answer: 'De duur is afhankelijk van de omvang en complexiteit van het project. Een badkamerrenovatie duurt typisch 1-2 weken, terwijl een nieuwbouwwoning 6-12 maanden kan duren. We stellen altijd een gedetailleerde planning op bij de start van het project.',
+  },
+  {
+    question: 'Bieden jullie ook zakelijke projecten in Zaandam aan?',
+    answer: 'Absoluut. We voeren regelmatig zakelijke projecten uit in de Zaanstreek, waaronder kantoorverbouwingen, winkelrenovaties en bedrijfsgebouwen. Neem contact op voor een zakelijke offerte.',
+  },
+  {
+    question: 'Wat is jullie werkgebied exact?',
+    answer: 'Ons werkgebied omvat heel Noord-Holland, met de nadruk op de Zaanstreek (Zaandam, Wormerveer, Krommenie, Assendelft), Amsterdam en omstreken, Haarlem, en de Gooi & Vechtstreek.',
+  },
+  {
+    question: 'Hebben jullie referenties in de Zaanstreek?',
+    answer: 'Ja, we hebben tientallen tevreden klanten in de Zaanstreek. Vraag ons gerust naar referentieprojecten in uw buurt. We kunnen ook contact leggen met eerdere opdrachtgevers die bereid zijn hun ervaringen te delen.',
+  },
+  {
+    question: 'Hoe contacteer ik jullie voor een offerte in Zaandam?',
+    answer: 'U kunt ons bellen op 06 41258151, een e-mail sturen naar info@asp-aannemersbedrijf.nl, of het contactformulier op onze website invullen. We reageren doorgaans binnen 24 uur met een vrijblijvende offerte.',
+  },
+];
+---
+
+<BaseLayout
+  title="Bouwbedrijf Zaandam, Wormerveer | Nieuwbouw & Renovatie | A.S.P Aannemersbedrijf"
+  description="A.S.P Aannemersbedrijf actief in de Zaanstreek. Meer dan 25 jaar ervaring in Zaandam, Wormerveer en omgeving. Nieuwbouw, renovatie en zakelijke projecten."
+>
+  <WerkgebiedHero
+    title="Bouw & Renovatie in Zaandam"
+    subtitle="Meer dan 25 jaar ervaring in de Zaanstreek. Van Zaandam tot Assendelft — we kennen elke straat en elke gemeente."
+    location="Zaanstreek & Noord-Holland"
+    image="https://pagesmith-cdn.com/ba5d94c5/images/411cc44d8_generated_image-1024.webp"
+    imageAlt="Nieuwbouw in Zaandam"
+    ctaText="Vraag offerte aan"
+    ctaHref="#footer"
+  />
+
+  <WerkgebiedDiensten
+    heading="Onze diensten in de Zaanstreek"
+    diensten={diensten}
+  />
+
+  <WerkgebiedVoordelen
+    heading="Waarom A.S.P voor uw project in de Zaanstreek?"
+    voordelen={voordelen}
+  />
+
+  <WerkgebiedFAQ faqs={faqs} />
+
+  <WerkgebiedCTA
+    city="Zaandam"
+    heading="Klaar om te starten in Zaandam?"
+    subtext="Neem vandaag contact op. Wij bespreken je wensen, budget en planning."
+  />
+</BaseLayout>

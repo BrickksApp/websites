@@ -1,0 +1,141 @@
+---
+import Container from '@/components/Container.astro';
+import { SITE } from '@/config/site';
+
+const logo = "https://pagesmith-cdn.com/ba5d94c5/images/f62469035_Foto_04-05-2026_om_1545-removebg-preview-640.webp";
+---
+
+<header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-[20px]" data-ps="src/components/Navigation.astro:dt8k87">
+  <nav data-ps="src/components/Navigation.astro:m59h3b">
+    <div class="max-w-[1320px] mx-auto px-4 md:px-8 flex justify-between items-center" data-ps="src/components/Navigation.astro:gqvsd8">
+      <a href="/" class="transition-all duration-300" data-ps="src/components/Navigation.astro:kd8n5y">
+        <img 
+          id="nav-logo"
+          src={logo} 
+          alt={SITE.name} 
+          class="w-[124px] h-[56px] object-contain transition-all duration-300 invert brightness-0" data-ps="src/components/Navigation.astro:d4d6a3" />
+      </a>
+
+      <div class="hidden md:flex gap-[32px] items-center" data-ps="src/components/Navigation.astro:gqvsdc">
+        <a href="/" class="nav-link text-[14px] font-medium text-white/80 hover:text-white transition-colors" data-ps="src/components/Navigation.astro:7vkjrg">Home</a>
+        <a href="/Overons" class="nav-link text-[14px] font-medium text-white/80 hover:text-white transition-colors" data-ps="src/components/Navigation.astro:7vkjrh">Over ons</a>
+        
+        <div class="relative group" data-ps="src/components/Navigation.astro:gqvsd9">
+          <button class="nav-link text-[14px] font-medium text-white/80 hover:text-white flex items-center gap-1 transition-colors" data-ps="src/components/Navigation.astro:4mv9d">
+            Diensten
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </button>
+          <div class="absolute top-full left-0 mt-2 w-48 bg-white shadow-xl rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-border" data-ps="src/components/Navigation.astro:gqvsda">
+            <a href="/diensten/nieuwbouw" class="block px-4 py-2 text-[14px] text-foreground hover:bg-surface hover:text-primary" data-ps="src/components/Navigation.astro:7vkjri">Nieuwbouw</a>
+            <a href="/diensten/ruwbouw" class="block px-4 py-2 text-[14px] text-foreground hover:bg-surface hover:text-primary" data-ps="src/components/Navigation.astro:7vkjrj">Ruwbouw</a>
+            <a href="/diensten/renovatie" class="block px-4 py-2 text-[14px] text-foreground hover:bg-surface hover:text-primary" data-ps="src/components/Navigation.astro:7vkjrk">Renovatie</a>
+            <a href="/diensten/aan-uitbouw" class="block px-4 py-2 text-[14px] text-foreground hover:bg-surface hover:text-primary" data-ps="src/components/Navigation.astro:7vkjs6">Aan- & Uitbouw</a>
+            <a href="/diensten/afbouw" class="block px-4 py-2 text-[14px] text-foreground hover:bg-surface hover:text-primary" data-ps="src/components/Navigation.astro:7vkjs7">Afbouw</a>
+            <a href="/diensten/zakelijk" class="block px-4 py-2 text-[14px] text-foreground hover:bg-surface hover:text-primary" data-ps="src/components/Navigation.astro:7vkjs8">Zakelijk</a>
+          </div>
+        </div>
+
+        <a href="/Werkwijze" class="nav-link text-[14px] font-medium text-white/80 hover:text-white transition-colors" data-ps="src/components/Navigation.astro:7vkjs9">Werkwijze</a>
+        
+        <div class="relative group" data-ps="src/components/Navigation.astro:gqvsdb">
+          <button class="nav-link text-[14px] font-medium text-white/80 hover:text-white flex items-center gap-1 transition-colors" data-ps="src/components/Navigation.astro:4mv9e">
+            Werkgebieden
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </button>
+          <div class="absolute top-full left-0 mt-2 w-48 bg-white shadow-xl rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-border" data-ps="src/components/Navigation.astro:gqvsdc2">
+            <a href="/werkgebieden/zaanstreek" class="block px-4 py-2 text-[14px] text-foreground hover:bg-surface hover:text-primary" data-ps="src/components/Navigation.astro:7vkjt0">Zaanstreek</a>
+            <a href="/werkgebieden/amsterdam" class="block px-4 py-2 text-[14px] text-foreground hover:bg-surface hover:text-primary" data-ps="src/components/Navigation.astro:7vkjt1">Amsterdam</a>
+            <a href="/werkgebieden/haarlem" class="block px-4 py-2 text-[14px] text-foreground hover:bg-surface hover:text-primary" data-ps="src/components/Navigation.astro:7vkjt2">Haarlem</a>
+            <a href="/werkgebieden/utrecht" class="block px-4 py-2 text-[14px] text-foreground hover:bg-surface hover:text-primary" data-ps="src/components/Navigation.astro:7vkjt3">Utrecht</a>
+            <a href="/werkgebieden/gouda" class="block px-4 py-2 text-[14px] text-foreground hover:bg-surface hover:text-primary" data-ps="src/components/Navigation.astro:7vkjt4">Gouda</a>
+            <a href="/werkgebieden/almeer" class="block px-4 py-2 text-[14px] text-foreground hover:bg-surface hover:text-primary" data-ps="src/components/Navigation.astro:7vkjt5">Almeer</a>
+            <a href="/werkgebieden/hilversum" class="block px-4 py-2 text-[14px] text-foreground hover:bg-surface hover:text-primary" data-ps="src/components/Navigation.astro:7vkjt6">Hilversum</a>
+            <a href="/werkgebieden/waterland" class="block px-4 py-2 text-[14px] text-foreground hover:bg-surface hover:text-primary" data-ps="src/components/Navigation.astro:7vkjt7">Waterland</a>
+          </div>
+        </div>
+
+        <a 
+          id="nav-cta"
+          href="/#contact" 
+          class="ml-4 px-[28px] py-[12px] text-[14px] font-bold text-white border-2 border-white/50 rounded-lg hover:bg-primary hover:border-primary transition-all duration-300"
+         data-ps="src/components/Navigation.astro:7vkjsa">
+          Doe je aanvraag
+        </a>
+      </div>
+
+      <button
+        id="mobile-menu-button"
+        type="button"
+        class="md:hidden p-2 text-white"
+        aria-label="Toggle menu"
+       data-ps="src/components/Navigation.astro:5ds1">
+        <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <div id="mobile-menu" class="hidden fixed inset-0 z-50 bg-background md:hidden" data-ps="src/components/Navigation.astro:gqvsdc">
+    <div class="flex flex-col h-full p-8" data-ps="src/components/Navigation.astro:gqvsdd">
+      <div class="flex justify-between items-center mb-8" data-ps="src/components/Navigation.astro:gqvsde">
+        <img src={logo} alt={SITE.name} class="h-10 object-contain" data-ps="src/components/Navigation.astro:d4d6a2" />
+        <button id="mobile-menu-close" class="p-2 text-foreground" data-ps="src/components/Navigation.astro:4mv9f">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-6" data-ps="src/components/Navigation.astro:m59h3d">
+        <a href="/" class="text-xl font-medium" data-ps="src/components/Navigation.astro:7vkjsb">Home</a>
+        <a href="/Overons" class="text-xl font-medium" data-ps="src/components/Navigation.astro:7vkjsc">Over ons</a>
+        <a href="/Diensten" class="text-xl font-medium" data-ps="src/components/Navigation.astro:7vkjsd">Diensten</a>
+        <a href="/Werkwijze" class="text-xl font-medium" data-ps="src/components/Navigation.astro:7vkjse">Werkwijze</a>
+        <a href="/Werkgebieden" class="text-xl font-medium" data-ps="src/components/Navigation.astro:7vkjsg">Werkgebieden</a>
+        <a href="/#contact" class="px-6 py-3 bg-primary text-white text-center rounded-lg font-bold" data-ps="src/components/Navigation.astro:7vkjsf">Doe je aanvraag</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<script is:inline>
+  const navbar = document.getElementById('navbar');
+  const logoImg = document.getElementById('nav-logo');
+  const ctaBtn = document.getElementById('nav-cta');
+  const navLinks = document.querySelectorAll('.nav-link');
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileMenuClose = document.getElementById('mobile-menu-close');
+
+  function updateNavbar() {
+    if (window.scrollY > 50) {
+      navbar?.classList.add('bg-white', 'shadow-md', 'py-[15px]');
+      navbar?.classList.remove('py-[20px]');
+      logoImg?.classList.remove('invert', 'brightness-0');
+      ctaBtn?.classList.add('bg-primary', 'border-primary', 'text-white');
+      ctaBtn?.classList.remove('border-white/50');
+      mobileMenuButton?.classList.add('text-foreground');
+      mobileMenuButton?.classList.remove('text-white');
+      navLinks.forEach(link => {
+        link.classList.add('text-foreground');
+        link.classList.remove('text-white/80');
+      });
+    } else {
+      navbar?.classList.remove('bg-white', 'shadow-md', 'py-[15px]');
+      navbar?.classList.add('py-[20px]');
+      logoImg?.classList.add('invert', 'brightness-0');
+      ctaBtn?.classList.remove('bg-primary', 'border-primary');
+      ctaBtn?.classList.add('border-white/50');
+      mobileMenuButton?.classList.remove('text-foreground');
+      mobileMenuButton?.classList.add('text-white');
+      navLinks.forEach(link => {
+        link.classList.remove('text-foreground');
+        link.classList.add('text-white/80');
+      });
+    }
+  }
+
+  window.addEventListener('scroll', updateNavbar, { passive: true });
+  updateNavbar();
+
+  mobileMenuButton?.addEventListener('click', () => mobileMenu?.classList.remove('hidden'));
+  mobileMenuClose?.addEventListener('click', () => mobileMenu?.classList.add('hidden'));
+</script>

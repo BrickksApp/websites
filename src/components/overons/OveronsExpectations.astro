@@ -1,0 +1,49 @@
+---
+const expectations = [
+  {
+    title: "Geen verrassingen",
+    description: "Je weet vooraf wat het kost en hoe lang het duurt. Afwijkingen bespreken we direct met jou.",
+  },
+  {
+    title: "Vast contactpersoon",
+    description: "Geen eindeloze telefoongesprekken. Een vaste aannemer die je kent en die je project kent.",
+  },
+  {
+    title: "Lokale expertise",
+    description: "We kennen Noord-Holland en de gemeente vereisten. Geen gedoe met vergunningen.",
+  },
+  {
+    title: "Kwaliteit eerst",
+    description: "Niet de goedkoopste, maar de beste. We gebruiken goede materialen en vakmannen.",
+  },
+  {
+    title: "Rekeninghouden met jou",
+    description: "Woont er nog iemand in het huis? We zorgen dat je leven niet stil staat.",
+  },
+  {
+    title: "10 Jaar Garantie",
+    description: "Wij staan achter ons werk. 10 jaar garantie op alle bouwkundige werkzaamheden.",
+  },
+];
+---
+<section class="py-[112px]" style="background: rgba(240, 242, 244, 0.5);">
+  <div class="max-w-[1320px] mx-auto px-6">
+    <div class="text-center mb-12 reveal">
+      <span class="inline-block text-[hsl(211,62%,47%)] text-sm font-semibold uppercase tracking-widest mb-3">Waarom A.S.P?</span>
+      <h2 class="text-[42px] font-semibold" style="color: hsl(220, 19%, 15%);">Wat je kan verwachten</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {expectations.map((item, i) => (
+        <div class={`bg-white rounded-lg p-8 border border-[hsl(210,15%,90%)] hover:shadow-md transition-shadow reveal reveal-delay-${(i % 3) + 1}`}>
+          <div class="w-10 h-10 rounded-full flex items-center justify-center mb-4" style="background-color: hsl(211, 62%, 94%);">
+            <svg class="w-5 h-5" style="color: hsl(211, 62%, 47%);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <h3 class="text-[18px] font-bold mb-2" style="color: hsl(220, 19%, 15%);">{item.title}</h3>
+          <p class="text-[14px] leading-[22.75px]" style="color: hsl(219, 10%, 45%);">{item.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

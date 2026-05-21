@@ -1,0 +1,85 @@
+@import 'tailwindcss';
+@import './fonts.css';
+@plugin "@tailwindcss/typography";
+
+:root {
+  --nav-height: 80px;
+
+  --color-background: hsl(0, 0%, 100%);
+  --color-foreground: hsl(220, 19%, 15%);
+  --color-muted-foreground: hsl(219, 10%, 45%);
+  --color-border: hsl(210, 15%, 90%);
+  --color-surface: hsl(210, 15%, 95%);
+  --color-primary: hsl(211, 62%, 47%);
+  --color-primary-foreground: hsl(0, 0%, 100%);
+  --color-primary-hover: hsl(211, 62%, 37%);
+  --color-secondary: hsl(142, 76%, 36%);
+  --color-secondary-foreground: hsl(0, 0%, 100%);
+  --color-secondary-hover: hsl(142, 76%, 26%);
+  --color-dark: hsl(223, 42%, 18%);
+  --color-dark-foreground: hsl(0, 0%, 100%);
+  --color-dark-muted: hsl(219, 10%, 75%);
+  --color-dark-border: hsl(223, 42%, 28%);
+  --color-accent: hsl(211, 62%, 47%);
+
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --radius: 8px;
+}
+
+@theme {
+  --font-sans: var(--font-sans);
+
+  --color-background: var(--color-background);
+  --color-foreground: var(--color-foreground);
+  --color-muted-foreground: var(--color-muted-foreground);
+  --color-border: var(--color-border);
+  --color-surface: var(--color-surface);
+
+  --color-primary: var(--color-primary);
+  --color-primary-foreground: var(--color-primary-foreground);
+  --color-primary-hover: var(--color-primary-hover);
+
+  --color-secondary: var(--color-secondary);
+  --color-secondary-foreground: var(--color-secondary-foreground);
+  --color-secondary-hover: var(--color-secondary-hover);
+
+  --color-dark: var(--color-dark);
+  --color-dark-foreground: var(--color-dark-foreground);
+  --color-dark-muted: var(--color-dark-muted);
+  --color-dark-border: var(--color-dark-border);
+}
+
+html, body {
+  overflow-x: clip;
+}
+
+html {
+  scroll-padding-top: var(--nav-height);
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
+
+.prose {
+  --tw-prose-body: var(--color-foreground);
+  --tw-prose-headings: var(--color-foreground);
+  --tw-prose-links: var(--color-primary);
+  --tw-prose-bold: var(--color-foreground);
+  --tw-prose-bullets: var(--color-muted-foreground);
+  --tw-prose-hr: var(--color-border);
+}
+
+h1, h2, h3, h4 {
+  overflow-wrap: break-word;
+  text-wrap: balance;
+  hyphens: none;
+}
+
+p, li {
+  text-wrap: pretty;
+  hyphens: auto;
+}

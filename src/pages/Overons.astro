@@ -1,0 +1,26 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import OveronsHero from '@/components/overons/OveronsHero.astro';
+import OveronsGeschiedenis from '@/components/overons/OveronsGeschiedenis.astro';
+import OveronsValues from '@/components/overons/OveronsValues.astro';
+import OveronsGarantie from '@/components/overons/OveronsGarantie.astro';
+import OveronsProces from '@/components/overons/OveronsProces.astro';
+import OveronsExpectations from '@/components/overons/OveronsExpectations.astro';
+import OveronsFAQ from '@/components/overons/OveronsFAQ.astro';
+import OveronsCTA from '@/components/overons/OveronsCTA.astro';
+import PageContactForm from '@/components/shared/PageContactForm.astro';
+---
+<BaseLayout
+  title="Over Ons | A.S.P Aannemersbedrijf"
+  description="Meer dan 25 jaar vakmanschap in nieuwbouw en renovatie. Ontdek wie we zijn, hoe we werken en waarom 400+ klanten voor A.S.P Aannemersbedrijf kiezen."
+>
+  <OveronsHero />
+  <OveronsGeschiedenis />
+  <OveronsValues />
+  <OveronsGarantie />
+  <OveronsProces />
+  <OveronsExpectations />
+  <OveronsFAQ />
+  <OveronsCTA />
+  <PageContactForm pagePath="/Overons" />
+</BaseLayout>

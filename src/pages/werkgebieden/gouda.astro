@@ -1,0 +1,125 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import WerkgebiedHero from '../../components/werkgebieden/WerkgebiedHero.astro';
+import WerkgebiedDiensten from '../../components/werkgebieden/WerkgebiedDiensten.astro';
+import WerkgebiedVoordelen from '../../components/werkgebieden/WerkgebiedVoordelen.astro';
+import WerkgebiedFAQ from '../../components/werkgebieden/WerkgebiedFAQ.astro';
+import WerkgebiedCTA from '../../components/werkgebieden/WerkgebiedCTA.astro';
+
+const diensten = [
+  {
+    name: 'Ruwbouw',
+    description: 'Fundering tot dak — solide structuurwerk voor elk project in Gouda en omgeving.',
+    icon: 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4',
+    href: '/diensten/ruwbouw/',
+  },
+  {
+    name: 'Nieuwbouw',
+    description: 'Compleet bouw van grond tot sleutel — woning of bedrijfspand in Gouda en omstreken.',
+    icon: 'M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6',
+    href: '/diensten/nieuwbouw/',
+  },
+  {
+    name: 'Renovatie',
+    description: 'Vernieuw je bestaande pand volledig — badkamer, keuken, interieur of volledige opknapbeurt.',
+    icon: 'M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z',
+    href: '/diensten/renovatie/',
+  },
+  {
+    name: 'Afbouw',
+    description: 'Stucwerk, schilderwerk, vloeren — de finishing touch voor uw project in Gouda.',
+    icon: 'M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z',
+    href: '/diensten/afbouw/',
+  },
+  {
+    name: 'Aanbouw',
+    description: 'Meer ruimte toevoegen aan je huis — aanbouw, dakkapel of uitbreiding op maat.',
+    icon: 'M12 4v16m8-8H4',
+    href: '/diensten/aan-uitbouw/',
+  },
+  {
+    name: 'Onderhoud',
+    description: 'Reparaties en spoedwerk bij problemen — snel en vakkundig onderhoud in de Goudse regio.',
+    icon: 'M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z M15 12a3 3 0 11-6 0 3 3 0 016 0z',
+  },
+];
+
+const voordelen = [
+  {
+    title: 'Compleet bouwbedrijf',
+    description: 'Van ruwbouw tot afbouw — één aanspreekpunt voor uw complete bouwproject. Geen gedoe met meerdere aannemers en onderaannemers.',
+  },
+  {
+    title: 'Ervaring in Zuid-Holland',
+    description: 'We kennen de Goudse regio en alle lokale bouwregels. Onze projecten lopen soepel dankzij jarenlange ervaring in dit werkgebied.',
+  },
+  {
+    title: 'Op tijd en binnen budget',
+    description: 'We stellen duidelijke planningen op en houden ons eraan. Transparante offertes zonder verborgen kosten — altijd zoals afgesproken.',
+  },
+  {
+    title: 'BouwGarant gecertificeerd',
+    description: 'Al ons werk valt onder de BouwGarant certificering. U bouwt met de zekerheid van 10 jaar structurele garantie en onafhankelijke bescherming.',
+  },
+];
+
+const faqs = [
+  {
+    question: 'Werken jullie in Gouda en omstreken?',
+    answer: 'Ja, we voeren alle projecten uit van ruwbouw tot volledige afbouw in Gouda en Zuid-Holland omgeving. We zijn actief in Gouda, Waddinxveen, Bodegraven, Woerden en omliggende gemeenten.',
+  },
+  {
+    question: 'Hoe lang duren projecten in de Goudse regio?',
+    answer: 'De duur hangt af van de omvang en complexiteit. Een badkamerrenovatie duurt doorgaans 1-2 weken, een volledige woningrenovatie 2-4 maanden, en nieuwbouwprojecten 6-12 maanden. We stellen altijd een gedetailleerde planning op.',
+  },
+  {
+    question: 'Doen jullie ook onderhoud en reparaties?',
+    answer: 'Ja, we verzorgen ook onderhoud en spoedwerk in Gouda en omgeving. Of het nu gaat om een lekkage, scheuren in muren of dakproblemen — we reageren snel en lossen het vakkundig op.',
+  },
+  {
+    question: 'Zijn jullie ISO of DIN gecertificeerd?',
+    answer: 'Wij zijn BouwGarant gecertificeerd — een erkend keurmerk in de Nederlandse bouwsector. Dit garandeert kwaliteit, vakmanschap en financiële zekerheid voor onze opdrachtgevers.',
+  },
+  {
+    question: 'Kunnen jullie budgetwerk doen?',
+    answer: 'We bieden maatwerk voor elk budget. Tijdens het intakegesprek bespreken we uw wensen en budget, waarna we een realistische offerte opstellen die bij uw situatie past.',
+  },
+  {
+    question: 'Hoe contacteer ik jullie?',
+    answer: 'U kunt ons bellen op 06 41258151, een e-mail sturen naar info@asp-aannemersbedrijf.nl, of het contactformulier op onze website invullen. We reageren doorgaans binnen 24 uur.',
+  },
+];
+---
+
+<BaseLayout
+  title="Bouwbedrijf Gouda | Ruwbouw tot Afbouw | A.S.P Aannemersbedrijf"
+  description="A.S.P Aannemersbedrijf actief in Gouda en Zuid-Holland. Van ruwbouw tot afbouw — compleet bouwservice met meer dan 25 jaar vakmanschap en BouwGarant zekerheid."
+>
+  <WerkgebiedHero
+    title="Alles Bouw in Gouda"
+    subtitle="Van ruwbouw tot afbouw — compleet bouwservice in Gouda en omgeving. Op tijd, binnen budget en met vakmanschap."
+    location="Gouda & Zuid-Holland"
+    image="https://pagesmith-cdn.com/ba5d94c5/images/f7fc278ff_generated_image-1024.webp"
+    imageAlt="Bouwproject in Gouda"
+    ctaText="Offerte aanvragen"
+    ctaHref="#footer"
+  />
+
+  <WerkgebiedDiensten
+    heading="Volledige bouwservice Gouda"
+    diensten={diensten}
+  />
+
+  <WerkgebiedVoordelen
+    heading="Waarom A.S.P voor uw project in Gouda?"
+    voordelen={voordelen}
+  />
+
+  <WerkgebiedFAQ faqs={faqs} />
+
+  <WerkgebiedCTA
+    city="Gouda"
+    heading="Bouwwerk in Gouda?"
+    subtext="Laat ons je project analyseren — snel en vakkundig."
+  />
+</BaseLayout>

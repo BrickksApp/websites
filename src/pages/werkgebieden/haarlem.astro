@@ -1,0 +1,122 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import WerkgebiedHero from '../../components/werkgebieden/WerkgebiedHero.astro';
+import WerkgebiedDiensten from '../../components/werkgebieden/WerkgebiedDiensten.astro';
+import WerkgebiedVoordelen from '../../components/werkgebieden/WerkgebiedVoordelen.astro';
+import WerkgebiedFAQ from '../../components/werkgebieden/WerkgebiedFAQ.astro';
+import WerkgebiedCTA from '../../components/werkgebieden/WerkgebiedCTA.astro';
+
+const diensten = [
+  {
+    name: 'Villa renovatie',
+    description: 'Volledige renovatie van Haarlemse villa\'s met premium materialen en toppresentatie.',
+    icon: 'M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z',
+  },
+  {
+    name: 'Landhuiswerk',
+    description: 'Landhuizen renoveren met respect voor karaktervolle details en historische architectuur.',
+    icon: 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4',
+  },
+  {
+    name: 'Uitbreiding',
+    description: 'Moderne aanbouwen die naadloos aansluiten bij de bestaande architectuur van uw woning.',
+    icon: 'M12 4v16m8-8H4',
+    href: '/diensten/aan-uitbouw/',
+  },
+  {
+    name: 'Erfgoedwerk',
+    description: 'Beschermde monumenten vakkundig en authentiek renoveren — met kennis van Haarlemse erfgoedregels.',
+    icon: 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z',
+  },
+  {
+    name: 'Luxe interieur',
+    description: 'Badkamer, keuken — premium afwerking op topniveau voor de veeleisende Haarlemse woningeigenaar.',
+    icon: 'M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z',
+    href: '/diensten/afbouw/',
+  },
+  {
+    name: 'Duurzame upgrade',
+    description: 'Isolatie, zonnepanelen, moderne installaties in villa\'s — toekomstbestendig en energiezuinig.',
+    icon: 'M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064',
+  },
+];
+
+const voordelen = [
+  {
+    title: 'Expertise in topniveau',
+    description: 'Tientallen villa\'s en landhuizen gerenoveerd in Haarlem en Bloemendaal. Premium materialen, premium vakmanschap — dit is ons specialisme.',
+  },
+  {
+    title: 'Erfgoed expertise',
+    description: 'Veel Haarlemse huizen zijn beschermd monument. We werken vakkundig met erfgoeddeskundigen en kennen de Haarlemse erfgoedregels door en door.',
+  },
+  {
+    title: 'Discretie & kwaliteit',
+    description: 'We begrijpen dat kwaliteit en privacy belangrijk zijn in dit segment. We werken discreet, professioneel en altijd met respect voor uw woning en omgeving.',
+  },
+  {
+    title: 'Unieke referenties',
+    description: '50+ projecten in Haarlem en Bloemendaal afgerond. Vraag gerust naar onze portefeuille — we verbinden u ook graag met tevreden opdrachtgevers.',
+  },
+];
+
+const faqs = [
+  {
+    question: 'Werken jullie in Haarlem, Bloemendaal en Kennemerland?',
+    answer: 'Ja, dit is ons kerngebied. Van welgestelde villawijken tot duinwoningen — we renoveren en bouwen al 25 jaar in deze regio. We zijn actief in heel Kennemerland, inclusief Haarlem, Bloemendaal, Zandvoort, Heemstede en Bennebroek.',
+  },
+  {
+    question: 'Hoe gaan jullie om met dure Haarlemse huizen?',
+    answer: 'We werken zorgvuldig en professioneel. Uw woning is een waardevolle investering — we behandelen elk detail met de nodige aandacht en expertise. Onze vakmensen zijn gespecialiseerd in premium werk.',
+  },
+  {
+    question: 'Welke projecten hebben jullie in Haarlem gedaan?',
+    answer: 'We hebben meer dan 50 projecten in Haarlem en omgeving afgerond, van villa\'s in Bloemendaal tot landhuizen in Heemstede. Vraag naar onze portefeuille — we tonen u graag concrete referentieprojecten.',
+  },
+  {
+    question: 'Bieden jullie landhuisrenovatie aan?',
+    answer: 'Absoluut. Landhuisrenovatie is een van onze specialiteiten. We restaureren authentieke details — houten balken, stucwerk, historische gevels — gecombineerd met moderne comfort en installaties.',
+  },
+  {
+    question: 'Hoe duur is renovatie in Bloemendaal/Haarlem gemiddeld?',
+    answer: 'De kosten zijn sterk afhankelijk van de omvang en uitvoering. We bieden altijd een transparante, gedetailleerde offerte zonder verborgen kosten. Neem contact op voor een vrijblijvende prijsindicatie op maat.',
+  },
+  {
+    question: 'Zijn jullie gekwalificeerd voor erfgoedwerk?',
+    answer: 'Ja, we zijn BouwGarant gecertificeerd en hebben uitgebreide ervaring met erfgoed en monumentenzorg. We werken nauw samen met de gemeente Haarlem en de Erfgoeddienst voor een correct en soepel traject.',
+  },
+];
+---
+
+<BaseLayout
+  title="Luxe Renovatie Haarlem, Bloemendaal | Villa's & Landhuizen | A.S.P Aannemersbedrijf"
+  description="A.S.P Aannemersbedrijf specialiseert zich in premium villa- en landhuisrenovaties in Haarlem, Bloemendaal en Kennemerland. 25+ jaar topvakmanschap in de regio."
+>
+  <WerkgebiedHero
+    title="Premium bouw in Haarlem"
+    subtitle="Villa's, landhuizen, duinwoningen — vakmanschap op topniveau voor welgestelde Haarlem en Kennemerland. In vertrouwen en met topkwaliteit."
+    location="Haarlem, Bloemendaal & Kennemerland"
+    image="https://pagesmith-cdn.com/ba5d94c5/images/c4bf6c68c_generated_image-1024.webp"
+    imageAlt="Premium bouw en renovatie in Haarlem"
+    ctaText="Vraag consultatie aan"
+    ctaHref="#footer"
+  />
+
+  <WerkgebiedDiensten
+    heading="Luxe bouwdiensten in Kennemerland"
+    diensten={diensten}
+  />
+
+  <WerkgebiedVoordelen
+    heading="Waarom A.S.P voor uw Haarlemse project?"
+    voordelen={voordelen}
+  />
+
+  <WerkgebiedFAQ faqs={faqs} />
+
+  <WerkgebiedCTA
+    city="Haarlem"
+    heading="Luxe bouwproject in Haarlem?"
+    subtext="Laten we uw visie bespreken — in vertrouwen en met topkwaliteit."
+  />
+</BaseLayout>

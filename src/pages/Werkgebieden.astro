@@ -1,0 +1,22 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import WerkgebiedenHero from '@/components/werkgebieden/WerkgebiedenHero.astro';
+import WerkgebiedenDiensten from '@/components/werkgebieden/WerkgebiedenDiensten.astro';
+import WerkgebiedenRegios from '@/components/werkgebieden/WerkgebiedenRegios.astro';
+import WerkgebiedenWaarom from '@/components/werkgebieden/WerkgebiedenWaarom.astro';
+import WerkgebiedenFAQ from '@/components/werkgebieden/WerkgebiedenFAQ.astro';
+import WerkgebiedenCTA from '@/components/werkgebieden/WerkgebiedenCTA.astro';
+import PageContactForm from '@/components/shared/PageContactForm.astro';
+---
+<BaseLayout
+  title="Werkgebieden | A.S.P Aannemersbedrijf"
+  description="Nieuwbouw, renovatie, ruwbouw, aanbouw en afbouw in Amsterdam, Utrecht, Haarlem en omstreken. 25+ jaar ervaring in Noord-Holland en Flevoland. Gratis offerte."
+>
+  <WerkgebiedenHero />
+  <WerkgebiedenDiensten />
+  <WerkgebiedenRegios />
+  <WerkgebiedenWaarom />
+  <WerkgebiedenFAQ />
+  <WerkgebiedenCTA />
+  <PageContactForm pagePath="/Werkgebieden" />
+</BaseLayout>

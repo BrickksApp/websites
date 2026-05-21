@@ -1,0 +1,16 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import DienstenHero from '@/components/diensten/DienstenHero.astro';
+import DienstenGrid from '@/components/diensten/DienstenGrid.astro';
+import DienstenCTA from '@/components/diensten/DienstenCTA.astro';
+import PageContactForm from '@/components/shared/PageContactForm.astro';
+---
+<BaseLayout
+  title="Diensten | A.S.P Aannemersbedrijf"
+  description="Van fundering tot finishing touch — volledige bouwoplossingen voor particulier en zakelijk. Nieuwbouw, ruwbouw, renovatie, aan- & uitbouw, afbouw en zakelijke projecten."
+>
+  <DienstenHero />
+  <DienstenGrid />
+  <DienstenCTA />
+  <PageContactForm pagePath="/Diensten" />
+</BaseLayout>

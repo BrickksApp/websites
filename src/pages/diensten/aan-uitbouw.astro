@@ -1,0 +1,300 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+
+const heroImage = "https://pagesmith-cdn.com/ba5d94c5/images/414060d9a_generated_image-1024.webp";
+const detailImage = "https://pagesmith-cdn.com/ba5d94c5/images/35a9438ee_generated_image-1024.webp";
+
+const features = [
+  { title: "Meer Ruimte", desc: "Voeg bruikbare ruimte toe zonder te verhuizen" },
+  { title: "Waardeverhoging", desc: "Jouw huis wordt aanzienlijk waardevoller" },
+  { title: "Naadloze Integratie", desc: "Perfecte aansluiting met je bestaande huis" },
+  { title: "Flexibel Ontwerp", desc: "Volledig op maat naar jouw wensen" },
+  { title: "Volledig Project Management", desc: "Wij zorgen voor alles, van vergunningen tot oplevering" },
+  { title: "Vakkundig Execution", desc: "Vakmannen met ervaring in uitbouwen" },
+];
+
+const services = [
+  "Aanbouwen en uitbouwen",
+  "Overkappingen en veranda's",
+  "Bergingen en garages",
+  "Dakkapellen en zolder uitbreiding",
+  "Inpandige uitbreiding",
+  "Architect- en engineeringwerk",
+  "Vergunningen en stadplaatsing",
+  "Integratie met bestaande huis",
+];
+
+const faqs = [
+  {
+    q: "Hebben we een vergunning nodig voor aanbouwen?",
+    a: "In de meeste gevallen ja. Dit hangt af van grootte en locatie. Wij regelen alle vergunningen. Dat is onderdeel van ons service.",
+  },
+  {
+    q: "Hoe lang duurt een uitbouw?",
+    a: "De doorlooptijd varieert per project. Een gemiddelde aanbouw duurt 6–12 weken afhankelijk van complexiteit, grootte en vergunningsprocedure. We geven u bij aanvang een concrete planning.",
+  },
+  {
+    q: "Blijft de rest van mijn huis intact?",
+    a: "Absoluut. We werken zorgvuldig en beschermen de rest van uw woning tijdens de bouwwerkzaamheden. Overlast wordt tot een minimum beperkt.",
+  },
+  {
+    q: "Hoe zorg je voor goede aansluiting?",
+    a: "We maken gedetailleerde opmetingen en tekeningen zodat de uitbouw architectonisch en constructief perfect aansluit op het bestaande gebouw.",
+  },
+  {
+    q: "Wordt mijn huis energie-efficiënter?",
+    a: "Ja, we gebruiken moderne isolatiematerialen en energiezuinige constructiemethoden zodat de uitbouw voldoet aan de huidige energienormen.",
+  },
+  {
+    q: "Hoeveel ruimte krijg ik extra?",
+    a: "Dat hangt af van uw perceel en wensen. We bespreken alle mogelijkheden tijdens het intakegesprek en stellen een plan op dat maximaal haalbaar is binnen de regelgeving.",
+  },
+];
+---
+
+<BaseLayout
+  title="Aan- & Uitbouw Noord-Holland | Ruimte Toevoegen | A.S.P Aannemersbedrijf"
+  description="Meer ruimte nodig? A.S.P Aannemersbedrijf verzorgt aanbouwen, uitbouwen, overkappingen en meer in Noord-Holland. Modern, stijlvol en perfect geïntegreerd."
+>
+  <!-- HERO -->
+  <section
+    id="hero"
+    class="relative min-h-[560px] flex items-center"
+    style={`background: hsl(223,42%,18%); padding-top: calc(var(--nav-height) + 80px); padding-bottom: 80px;`}
+  >
+    <div
+      class="absolute inset-0 bg-cover bg-center"
+      style={`background-image: url('${heroImage}');`}
+    ></div>
+    <div
+      class="absolute inset-0"
+      style="background: linear-gradient(to right, rgba(0,0,0,0.80), rgba(0,0,0,0.50), rgba(0,0,0,0.15));"
+    ></div>
+    <div class="relative z-10 w-full max-w-[1320px] mx-auto px-6">
+      <div class="max-w-[680px]">
+        <span
+          class="inline-block mb-5 px-4 py-1.5 text-sm font-medium text-white/80 border border-white/30 rounded-full"
+        >
+          Diensten
+        </span>
+        <h1
+          class="text-[72px] font-bold tracking-tight leading-[1.1] text-white mb-6"
+        >
+          Aan- & Uitbouw
+        </h1>
+        <p class="text-[18px] leading-[28px] text-white/75 mb-8 max-w-[560px]">
+          Meer ruimte nodig? Wij bouwen het aan. Modern, stijlvol en perfect geïntegreerd in je huis.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a
+            href="#contact"
+            class="inline-flex items-center px-8 py-4 rounded-lg text-[14px] font-bold text-white"
+            style="background: hsl(211,62%,47%);"
+          >
+            Neem contact op
+          </a>
+          <a
+            href="tel:0641258151"
+            class="inline-flex items-center px-8 py-4 rounded-lg text-[14px] font-bold text-white border-2 border-white/40 hover:border-white/70 transition-colors"
+          >
+            06 41258151
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO SECTION -->
+  <section class="py-[112px]" style="background: hsl(0,0%,100%);">
+    <div class="max-w-[1320px] mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal-left">
+          <img
+            src={detailImage}
+            alt="Uitbouw detail"
+            class="w-full object-cover rounded-lg"
+            style="max-height: 520px;"
+          />
+        </div>
+        <div class="reveal-right">
+          <span
+            class="inline-block mb-4 text-[12px] font-semibold tracking-widest uppercase"
+            style="color: hsl(211,62%,47%);"
+          >
+            UITBREIDEN ZONDER TE VERHUIZEN
+          </span>
+          <h2
+            class="text-[42px] font-semibold leading-[1.2] mb-6"
+            style="color: hsl(220,19%,15%);"
+          >
+            Meer ruimte, zonder te verhuizen
+          </h2>
+          <p class="text-[16px] leading-[26px] mb-4" style="color: hsl(219,10%,45%);">
+            Een uitbouw of aanbouw is de perfecte oplossing als je meer ruimte nodig hebt maar van je buurt houdt. Werkzamer, grotere keuken, extra slaapkamer — wat je ook wilt.
+          </p>
+          <p class="text-[16px] leading-[26px] mb-8" style="color: hsl(219,10%,45%);">
+            Wij maken je plannen waarheid. Van ontwerp en vergunningen tot bouw en oplevering — compleet pakket. En het belangrijkste: het voelt als één huis, niet twee losse delen.
+          </p>
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {["Architectonisch design", "Alle vergunningen geregeld", "Naadloze aansluiting", "Energiezuinig"].map((item) => (
+              <li class="flex items-center gap-3">
+                <span
+                  class="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center"
+                  style="background: hsl(142,76%,36%);"
+                >
+                  <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 12 12">
+                    <path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <span class="text-[14px] font-medium" style="color: hsl(220,19%,15%);">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES LIST -->
+  <section class="py-[112px]" style="background: rgba(240,242,244,0.5);">
+    <div class="max-w-[1320px] mx-auto px-6">
+      <div class="text-center mb-14 reveal">
+        <span
+          class="inline-block mb-4 text-[12px] font-semibold tracking-widest uppercase"
+          style="color: hsl(211,62%,47%);"
+        >
+          WAT WE KUNNEN AANBOUWEN
+        </span>
+        <h2 class="text-[42px] font-normal" style="color: hsl(220,19%,15%);">
+          Onze uitbouwdiensten
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {services.map((service) => (
+          <div
+            class="flex items-center gap-3 p-4 rounded-lg bg-white border reveal"
+            style="border-color: hsl(210,15%,90%);"
+          >
+            <span
+              class="flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center"
+              style="background: hsl(211,62%,47%); color: white;"
+            >
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 16 16">
+                <path d="M3 8.5l3.5 3.5 6.5-6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span class="text-[14px] font-medium" style="color: hsl(220,19%,15%);">{service}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="py-[112px]" style="background: hsl(223,42%,18%);">
+    <div class="max-w-[1320px] mx-auto px-6">
+      <div class="text-center mb-14 reveal">
+        <span
+          class="inline-block mb-4 text-[12px] font-semibold tracking-widest uppercase"
+          style="color: hsl(211,62%,47%);"
+        >
+          WAAROM A.S.P
+        </span>
+        <h2 class="text-[42px] font-normal text-white">
+          Waarom A.S.P voor je uitbouw?
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {features.map((f, i) => (
+          <div
+            class="p-6 rounded-lg border reveal"
+            style={`border-color: hsl(223,42%,28%); background: hsl(223,42%,22%); transition-delay: ${i * 0.1}s;`}
+          >
+            <div
+              class="w-10 h-10 rounded-lg flex items-center justify-center mb-4"
+              style="background: hsl(211,62%,47%);"
+            >
+              <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 20 20">
+                <path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="text-[16px] font-bold text-white mb-2">{f.title}</h3>
+            <p class="text-[14px] leading-[22px]" style="color: rgba(255,255,255,0.6);">{f.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-[112px]" style="background: hsl(0,0%,100%);">
+    <div class="max-w-[860px] mx-auto px-6">
+      <div class="text-center mb-14 reveal">
+        <span
+          class="inline-block mb-4 text-[12px] font-semibold tracking-widest uppercase"
+          style="color: hsl(211,62%,47%);"
+        >
+          VEELGESTELDE VRAGEN
+        </span>
+        <h2 class="text-[42px] font-semibold" style="color: hsl(220,19%,15%);">
+          Alles wat je moet weten
+        </h2>
+      </div>
+      <div class="space-y-4">
+        {faqs.map((faq, i) => (
+          <details
+            class="group border rounded-lg overflow-hidden reveal"
+            style={`border-color: hsl(210,15%,90%); transition-delay: ${i * 0.07}s;`}
+            open={i === 0}
+          >
+            <summary
+              class="flex items-center justify-between p-5 cursor-pointer list-none font-semibold text-[15px]"
+              style="color: hsl(220,19%,15%);"
+            >
+              <span>{faq.q}</span>
+              <svg
+                class="w-5 h-5 flex-shrink-0 transition-transform group-open:rotate-180"
+                style="color: hsl(211,62%,47%);"
+                fill="none"
+                viewBox="0 0 20 20"
+              >
+                <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </summary>
+            <div class="px-5 pb-5 text-[14px] leading-[22px]" style="color: hsl(219,10%,45%);">
+              {faq.a}
+            </div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" class="py-[80px]" style="background: hsl(211,62%,47%);">
+    <div class="max-w-[1320px] mx-auto px-6 text-center reveal">
+      <h2 class="text-[42px] font-bold text-white mb-4">Ruimte nodig?</h2>
+      <p class="text-[18px] text-white/80 mb-8 max-w-[560px] mx-auto">
+        Vertel ons over je plannen. We bespreken alle mogelijkheden en geven je een duidelijke offerte.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a
+          href="tel:0641258151"
+          class="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-[15px] font-bold bg-white"
+          style="color: hsl(211,62%,47%);"
+        >
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 20 20">
+            <path d="M3 5a2 2 0 012-2h1.5a1 1 0 01.98.8l.72 3.58a1 1 0 01-.29.94l-1.1 1.1a11.05 11.05 0 005.75 5.75l1.1-1.1a1 1 0 01.94-.29l3.58.72a1 1 0 01.8.98V15a2 2 0 01-2 2C8.716 17 3 11.284 3 5z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          06 41258151
+        </a>
+        <a
+          href="/diensten/aan-uitbouw/#contact"
+          class="inline-flex items-center px-8 py-4 rounded-lg text-[15px] font-bold text-white border-2 border-white/50 hover:border-white transition-colors"
+        >
+          Gratis offerte aanvragen
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

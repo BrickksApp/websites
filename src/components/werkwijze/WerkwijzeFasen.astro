@@ -1,0 +1,50 @@
+---
+const steps = [
+  {
+    number: "01",
+    title: "Intake & Planning",
+    description: "We starten met een persoonlijk gesprek om uw wensen, budget en planning in kaart te brengen. Op basis hiervan stellen we een concreet plan van aanpak op, inclusief tekeningen en materiaallijsten.",
+  },
+  {
+    number: "02",
+    title: "Vergunningen & Voorbereiding",
+    description: "Waar nodig verzorgen wij de benodigde vergunningen bij de gemeente. Tegelijkertijd worden materialen besteld en de bouwplaats ingericht zodat we snel en efficiënt kunnen starten.",
+  },
+  {
+    number: "03",
+    title: "Uitvoering & Bouw",
+    description: "Ons vakkundige team gaat aan de slag. Van ruwbouw tot afbouw — wij bewaken de kwaliteit op elke bouwfase en houden u doorlopend op de hoogte van de voortgang.",
+  },
+  {
+    number: "04",
+    title: "Oplevering & Nazorg",
+    description: "Na een grondige eindcontrole leveren wij het werk op. Wij lopen het project samen met u door en staan ook na oplevering klaar voor eventuele vragen of nazorg.",
+  },
+];
+---
+<section class="py-[112px]" style="background-color: hsl(0, 0%, 100%);">
+  <div class="max-w-[1320px] mx-auto px-6">
+    <div class="text-center mb-16 reveal">
+      <span class="inline-block text-[hsl(211,62%,47%)] text-sm font-semibold uppercase tracking-widest mb-3">Het Proces</span>
+      <h2 class="text-[42px] font-semibold" style="color: hsl(220, 19%, 15%);">4 Fasen naar Succes</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {steps.map((step, i) => (
+        <div class={`relative p-8 rounded-lg border-2 hover:shadow-lg transition-shadow reveal reveal-delay-${(i % 2) + 1}`} style="border-color: hsl(210, 15%, 90%); background-color: hsl(210, 15%, 98%);">
+          <div class="flex items-start gap-6">
+            <div class="flex-shrink-0">
+              <span class="text-[56px] font-bold leading-none" style="color: hsl(211, 62%, 47%); opacity: 0.25;">{step.number}</span>
+            </div>
+            <div>
+              <h3 class="text-[22px] font-bold mb-3" style="color: hsl(220, 19%, 15%);">{step.title}</h3>
+              <p class="text-[15px] leading-[24px]" style="color: hsl(219, 10%, 45%);">{step.description}</p>
+            </div>
+          </div>
+          <div class="absolute top-6 right-6 w-8 h-8 rounded-full flex items-center justify-center" style="background-color: hsl(211, 62%, 47%);">
+            <span class="text-white text-[12px] font-bold">{step.number}</span>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

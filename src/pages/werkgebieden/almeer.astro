@@ -1,0 +1,101 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import WerkgebiedHero from '../../components/werkgebieden/WerkgebiedHero.astro';
+import WerkgebiedDiensten from '../../components/werkgebieden/WerkgebiedDiensten.astro';
+import WerkgebiedFAQ from '../../components/werkgebieden/WerkgebiedFAQ.astro';
+import WerkgebiedCTA from '../../components/werkgebieden/WerkgebiedCTA.astro';
+
+const diensten = [
+  {
+    name: 'Nieuwbouw',
+    description: 'Moderne woningen en appartementen in Almeer. Van ontwerp tot oplevering met vakmanschap.',
+    icon: 'M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6',
+    href: '/diensten/nieuwbouw/',
+  },
+  {
+    name: 'Waterwerk',
+    description: 'Almeer-specifieke bouw met waterwerken en funderingen op slappe grond. Onze specialiteit.',
+    icon: 'M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4',
+    href: '/diensten/nieuwbouw/',
+  },
+  {
+    name: 'Renovatie',
+    description: 'Bestaande huizen moderniseren in Almeer. Van keuken en badkamer tot complete verbouwingen.',
+    icon: 'M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z',
+    href: '/diensten/renovatie/',
+  },
+  {
+    name: 'Aanbouw',
+    description: 'Uitbreidingen voor groeiende gezinnen in Almeer. Meer ruimte zonder te verhuizen.',
+    icon: 'M12 4v16m8-8H4',
+    href: '/diensten/aan-uitbouw/',
+  },
+  {
+    name: 'Zakelijk',
+    description: 'Kantoorverbouwingen en bedrijfsruimtes in Almeer en de Gooi & Vechtstreek.',
+    icon: 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4',
+    href: '/diensten/zakelijk/',
+  },
+  {
+    name: 'Duurzaam',
+    description: 'Energiezuinige bouw voor de toekomst. Zonnepanelen, isolatie en moderne installaties.',
+    icon: 'M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z',
+    href: '/diensten/nieuwbouw/',
+  },
+];
+
+const faqs = [
+  {
+    question: 'Werken jullie in Almeer en de Vechtstreek?',
+    answer: 'Ja, Almeer groeit snel en we voeren veel moderne projecten uit hier. We zijn actief in heel Almeer, inclusief de Gooi & Vechtstreek. Van nieuwbouw tot renovatie — we kennen de regio en de gemeentelijke vereisten.',
+  },
+  {
+    question: 'Wat maakt bouw in Almeer anders?',
+    answer: 'Almeer is een relatief jonge stad met moderne infrastructuur en unieke bodemgesteldheid. Veel percelen vereisen speciale funderingstechnieken vanwege de zachte ondergrond. Onze ervaring met waterwerken en funderingen in deze regio maakt ons de ideale partner.',
+  },
+  {
+    question: 'Bouwen jullie ook in Uithoorn en De Ronde Venen?',
+    answer: 'Ja, ons werkgebied strekt zich uit over groot Noord-Holland en de Gooi & Vechtstreek. We bouwen ook in Uithoorn, De Ronde Venen en omliggende gemeenten. Neem contact op voor een exacte opgave.',
+  },
+  {
+    question: 'Wat kosten projecten in Almeer gemiddeld?',
+    answer: 'De kosten zijn sterk afhankelijk van de aard en omvang van het project. We maken altijd een gedetailleerde offerte op maat. Neem contact op voor een vrijblijvende kostenraming.',
+  },
+  {
+    question: 'Hoeveel projecten hebben jullie in Almeer gedaan?',
+    answer: 'We hebben al tientallen projecten succesvol afgerond in Almeer en omgeving — van kleinschalige renovaties tot complete nieuwbouwprojecten. Vraag gerust naar onze referenties in de regio.',
+  },
+  {
+    question: "Werken jullie ook 's avonds of in weekends?",
+    answer: "In overleg is dat mogelijk. We begrijpen dat sommige projecten een flexibele planning vereisen. Bespreek uw wensen tijdens het kennismakingsgesprek en we zoeken samen naar een passende oplossing.",
+  },
+];
+---
+
+<BaseLayout
+  title="Bouwbedrijf Almeer | Moderne Projecten | A.S.P Aannemersbedrijf"
+  description="A.S.P Aannemersbedrijf actief in Almeer en de Gooi & Vechtstreek. Moderne nieuwbouw, renovatie en zakelijke projecten. Meer dan 25 jaar ervaring."
+>
+  <WerkgebiedHero
+    title="Moderne bouw in Almeer"
+    subtitle="Groeiende stad, moderne projecten — we bouwen het Almeer van morgen."
+    location="Almeer, Gooi & Vechtstreek"
+    image="https://pagesmith-cdn.com/ba5d94c5/images/2483005b5_generated_image-1024.webp"
+    imageAlt="Almeer bouw"
+    ctaText="Start je project"
+    ctaHref="#footer"
+  />
+
+  <WerkgebiedDiensten
+    heading="Bouwdiensten in Almeer"
+    diensten={diensten}
+  />
+
+  <WerkgebiedFAQ faqs={faqs} />
+
+  <WerkgebiedCTA
+    city="Almeer"
+    heading="Laten we samen bouwen — aan jouw droom in Almeer"
+    subtext="Neem vandaag contact op. Wij bespreken je wensen, budget en planning vrijblijvend met u."
+  />
+</BaseLayout>

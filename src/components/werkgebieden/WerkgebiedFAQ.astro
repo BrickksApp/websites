@@ -1,0 +1,47 @@
+---
+export interface FAQ {
+  question: string;
+  answer?: string;
+}
+
+export interface Props {
+  faqs: FAQ[];
+}
+
+const { faqs } = Astro.props;
+---
+
+<section id="faq" class="py-[112px]" style="background: hsl(223, 42%, 18%);">
+  <div class="max-w-[1320px] mx-auto px-6">
+    <div class="mb-12">
+      <span class="text-[13px] font-semibold tracking-widest uppercase text-[hsl(211,62%,70%)]">
+        VEELGESTELDE VRAGEN
+      </span>
+      <h2 class="text-[42px] font-normal text-white mt-2">Veel gestelde vragen</h2>
+    </div>
+
+    <div class="max-w-[800px] space-y-3">
+      {faqs.map((faq, i) => (
+        <details class="group border border-[hsl(223,42%,28%)] rounded-lg overflow-hidden" open={i === 0}>
+          <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none bg-[hsl(223,42%,22%)] hover:bg-[hsl(223,42%,24%)] transition-colors">
+            <span class="text-[16px] font-semibold text-white">{faq.question}</span>
+            <span class="flex-shrink-0 w-6 h-6 rounded-full border border-white/30 flex items-center justify-center text-white/70 group-open:rotate-45 transition-transform duration-200">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </summary>
+          <div class="px-6 py-4 bg-[hsl(223,42%,20%)]">
+            <p class="text-[14px] leading-[22px] text-white/60">
+              {faq.answer || "Neem contact met ons op voor meer informatie over dit onderwerp. Onze experts staan klaar om al uw vragen te beantwoorden."}
+            </p>
+          </div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  details > summary::-webkit-details-marker { display: none; }
+</style>

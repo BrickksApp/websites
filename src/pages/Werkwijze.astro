@@ -1,0 +1,22 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import WerkwijzeHero from '@/components/werkwijze/WerkwijzeHero.astro';
+import WerkwijzeFasen from '@/components/werkwijze/WerkwijzeFasen.astro';
+import WerkwijzeAanpak from '@/components/werkwijze/WerkwijzeAanpak.astro';
+import WerkwijzeStandaarden from '@/components/werkwijze/WerkwijzeStandaarden.astro';
+import WerkwijzeTiming from '@/components/werkwijze/WerkwijzeTiming.astro';
+import WerkwijzeCTA from '@/components/werkwijze/WerkwijzeCTA.astro';
+import PageContactForm from '@/components/shared/PageContactForm.astro';
+---
+<BaseLayout
+  title="Werkwijze | A.S.P Aannemersbedrijf"
+  description="Van eerste gesprek tot sleuteloverdracht — ontdek hoe A.S.P Aannemersbedrijf uw bouwproject stap voor stap begeleidt. Transparant, vakkundig en op schema."
+>
+  <WerkwijzeHero />
+  <WerkwijzeFasen />
+  <WerkwijzeAanpak />
+  <WerkwijzeStandaarden />
+  <WerkwijzeTiming />
+  <WerkwijzeCTA />
+  <PageContactForm pagePath="/Werkwijze" />
+</BaseLayout>

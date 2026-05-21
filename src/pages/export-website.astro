@@ -1,0 +1,114 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Website Exporteren | A.S.P Aannemersbedrijf"
+  description="Download de A.S.P Aannemersbedrijf website als statische HTML. Geschikt voor hosting op elke server."
+  noIndex={true}
+>
+  <section class="py-[112px]" style="background-color: hsl(223, 42%, 18%); min-height: calc(100vh - 80px);">
+    <div class="max-w-[800px] mx-auto px-6" style="padding-top: 60px;">
+      <div class="text-center mb-12">
+        <div class="inline-flex items-center justify-center w-20 h-20 rounded-2xl mb-6" style="background-color: hsl(211, 62%, 47%);">
+          <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+          </svg>
+        </div>
+        <h1 class="text-[48px] font-bold text-white mb-4">Website Exporteren</h1>
+        <p class="text-[18px] leading-[28px] max-w-[540px] mx-auto" style="color: rgba(255,255,255,0.7);">
+          Download je volledige website als statische HTML. Geschikt voor hosting op elke server, zonder afhankelijkheden.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow-2xl">
+        <!-- Header bar -->
+        <div class="px-8 py-5 border-b flex items-center justify-between" style="background-color: hsl(211, 62%, 47%);">
+          <div>
+            <h2 class="text-[20px] font-bold text-white">A.S.P Website</h2>
+            <p class="text-[13px] text-white/80 mt-0.5">Volledige statische website export</p>
+          </div>
+          <svg class="w-8 h-8 text-white/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+          </svg>
+        </div>
+
+        <div class="p-8">
+          <!-- Features list -->
+          <div class="grid sm:grid-cols-2 gap-3 mb-8">
+            {[
+              '5 volledige pagina\'s (HTML)',
+              'Alle CSS en JavaScript ingebouwd',
+              'Before/After sliders',
+              'Contact formulier',
+              'Responsive design (mobile & desktop)',
+              'settings.json voor gemakkelijke aanpassingen',
+            ].map(feature => (
+              <div class="flex items-center gap-3">
+                <svg class="w-5 h-5 flex-shrink-0" style="color: hsl(142, 76%, 36%);" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-[14px] font-medium" style="color: hsl(220, 19%, 15%);">{feature}</span>
+              </div>
+            ))}
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <!-- What's in the ZIP -->
+            <div class="rounded-lg p-5 border" style="background-color: hsl(210, 15%, 95%); border-color: hsl(210, 15%, 90%);">
+              <h3 class="text-[15px] font-bold mb-3" style="color: hsl(220, 19%, 15%);">Wat zit er in de ZIP?</h3>
+              <ul class="space-y-2">
+                {[
+                  { file: 'index.html', desc: 'Home page' },
+                  { file: 'over-ons.html', desc: 'About page' },
+                  { file: 'diensten.html', desc: 'Services' },
+                  { file: 'projecten.html', desc: 'Projects' },
+                  { file: 'contact.html', desc: 'Contact' },
+                  { file: 'settings.json', desc: 'Editable content' },
+                  { file: 'README.md', desc: 'Instructions' },
+                ].map(item => (
+                  <li class="flex items-start gap-2 text-[13px]">
+                    <code class="font-mono px-1.5 py-0.5 rounded text-[11px] flex-shrink-0" style="background-color: hsl(211, 62%, 47%); color: white;">{item.file}</code>
+                    <span style="color: hsl(219, 10%, 45%);">{item.desc}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <!-- How to use -->
+            <div class="rounded-lg p-5 border" style="background-color: hsl(210, 15%, 95%); border-color: hsl(210, 15%, 90%);">
+              <h3 class="text-[15px] font-bold mb-3" style="color: hsl(220, 19%, 15%);">Hoe te gebruiken?</h3>
+              <ol class="space-y-2">
+                {[
+                  'Download het ZIP bestand',
+                  'Extract het op je computer',
+                  'Open index.html in een browser',
+                  'Pas settings.json aan voor je content',
+                  'Upload alle bestanden naar je hosting provider',
+                ].map((step, i) => (
+                  <li class="flex items-start gap-3 text-[13px]" style="color: hsl(219, 10%, 45%);">
+                    <span class="w-5 h-5 rounded-full flex items-center justify-center text-[11px] font-bold text-white flex-shrink-0 mt-0.5" style="background-color: hsl(211, 62%, 47%);">{i + 1}</span>
+                    {step}
+                  </li>
+                ))}
+              </ol>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-6 border-t text-center" style="border-color: hsl(210, 15%, 90%);">
+            <p class="text-[14px] mb-4" style="color: hsl(219, 10%, 45%);">
+              Wil je de website laten aanpassen of heb je vragen? Neem contact op.
+            </p>
+            <a
+              href="/#contact"
+              class="inline-flex items-center gap-2 font-bold text-[14px] text-white px-8 py-4 rounded-lg"
+              style="background-color: hsl(211, 62%, 47%);"
+            >
+              Neem contact op
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,166 @@
+---
+---
+
+<!-- Services Section -->
+<section class="py-[112px] bg-white">
+  <div class="max-w-[1320px] mx-auto px-6">
+    <div class="text-center mb-14">
+      <p class="text-[13px] font-semibold tracking-widest uppercase mb-3" style="color: hsl(211, 62%, 47%);">WAT WIJ DOEN IN UTRECHT</p>
+      <h2 class="text-[42px] font-semibold leading-[1.2] mb-4" style="color: hsl(220, 19%, 15%);">Onze diensten in Utrecht</h2>
+      <p class="text-[18px] leading-[28px] max-w-[580px] mx-auto" style="color: hsl(219, 10%, 45%);">
+        Van nieuwbouw tot renovatie — A.S.P Aannemersbedrijf levert elk project in Utrecht op met vakmanschap en oog voor detail.
+      </p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {[
+        {
+          title: 'Nieuwbouw',
+          desc: 'Appartementen, woningen en kantoren in groeiend Utrecht.',
+          icon: 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4',
+        },
+        {
+          title: 'Ruwbouw',
+          desc: 'Fundamenteel vakwerk voor alle soorten projecten.',
+          icon: 'M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18',
+        },
+        {
+          title: 'Renovatie',
+          desc: 'Bestaande huizen en kantoren moderniseren.',
+          icon: 'M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z',
+        },
+        {
+          title: 'Uitbreiding',
+          desc: 'Aanbouwen en uitbreidingen voor meer ruimte.',
+          icon: 'M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4',
+        },
+        {
+          title: 'Zakelijke bouw',
+          desc: 'Kantoorinrichtingen en bedrijfspanden.',
+          icon: 'M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z',
+        },
+        {
+          title: 'Duurzaamheid',
+          desc: 'Energiezuinige systemen en moderne installaties.',
+          icon: 'M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z',
+        },
+      ].map(service => (
+        <div class="p-6 rounded-lg border hover:shadow-md transition-shadow" style="border-color: hsl(210, 15%, 90%);">
+          <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background-color: hsl(211, 62%, 47%);">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={service.icon} />
+            </svg>
+          </div>
+          <h3 class="text-[20px] font-bold mb-2" style="color: hsl(220, 19%, 15%);">{service.title}</h3>
+          <p class="text-[15px] leading-[24px]" style="color: hsl(219, 10%, 45%);">{service.desc}</p>
+          <a href="/diensten/" class="inline-flex items-center gap-1 text-[14px] font-semibold mt-4" style="color: hsl(211, 62%, 47%);">
+            Meer info
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- Stats Bar -->
+<section class="py-16" style="background-color: hsl(211, 62%, 47%);">
+  <div class="max-w-[1320px] mx-auto px-6">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      {[
+        { value: '25+', label: 'Jaar ervaring' },
+        { value: '400+', label: 'Projecten afgerond' },
+        { value: '100%', label: 'Tevredenheid' },
+        { value: '10j', label: 'BouwGarant garantie' },
+      ].map(stat => (
+        <div>
+          <div class="text-[42px] font-bold text-white">{stat.value}</div>
+          <div class="text-[14px] font-medium mt-1" style="color: rgba(255,255,255,0.8);">{stat.label}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-[112px]" style="background: rgba(240, 242, 244, 0.5);">
+  <div class="max-w-[800px] mx-auto px-6">
+    <div class="text-center mb-12">
+      <p class="text-[13px] font-semibold tracking-widest uppercase mb-3" style="color: hsl(211, 62%, 47%);">VEELGESTELDE VRAGEN</p>
+      <h2 class="text-[42px] font-semibold leading-[1.2]" style="color: hsl(220, 19%, 15%);">Veel gestelde vragen</h2>
+    </div>
+    <div class="space-y-3">
+      {[
+        {
+          q: 'Werken jullie in Utrecht en omgeving?',
+          a: 'Ja, Utrecht is een groeiende markt waar we veel nieuwe projecten uitvoeren. Van nieuwbouw tot renovatie — allemaal vakkundig.',
+          open: true,
+        },
+        {
+          q: 'Wat zijn typische projecten in Utrecht?',
+          a: 'We werken aan nieuwbouwwoningen, renovaties van oudere panden, aanbouwen en zakelijke projecten zoals kantoor- en winkelverbouwingen.',
+        },
+        {
+          q: 'Hoe snel kunnen jullie beginnen in Utrecht?',
+          a: 'Na een eerste gesprek en offerte kunnen we vaak binnen 2-4 weken starten. Voor grotere projecten houden we rekening met vergunningsprocedures.',
+        },
+        {
+          q: 'Zijn jullie betrokken bij duurzaam bouwen?',
+          a: 'Ja, we adviseren alle klanten over duurzame opties: warmtepompen, zonnepanelen, goede isolatie. Utrecht heeft ambitieuze duurzaamheidsdoelen en wij helpen daarmee.',
+        },
+        {
+          q: 'Welke garanties geven jullie?',
+          a: 'Als BouwGarant-gecertificeerd bedrijf bieden we 10 jaar structurele garantie. Naast BouwGarant zijn we ook volledig verzekerd voor alle risico\'s.',
+        },
+        {
+          q: 'Hebben jullie ook zakelijke ervaring?',
+          a: 'Zeker, we realiseren kantoorinrichtingen, winkels en bedrijfspanden in heel Utrecht. Zakelijke klanten profiteren van onze efficiënte werkwijze en duidelijke contracten.',
+        },
+      ].map((faq) => (
+        <details class="group bg-white rounded-lg border overflow-hidden" style="border-color: hsl(210, 15%, 90%);" open={faq.open}>
+          <summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-[16px] list-none" style="color: hsl(220, 19%, 15%);">
+            {faq.q}
+            <svg class="w-5 h-5 flex-shrink-0 transition-transform group-open:rotate-180" style="color: hsl(211, 62%, 47%);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div class="px-6 pb-6 text-[15px] leading-[24px]" style="color: hsl(219, 10%, 45%);">{faq.a}</div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section id="contact" class="py-[112px]" style="background-color: hsl(223, 42%, 18%);">
+  <div class="max-w-[1320px] mx-auto px-6 text-center">
+    <p class="text-[13px] font-semibold tracking-widest uppercase mb-4" style="color: hsl(211, 62%, 47%);">VRIJBLIJVEND GESPREK</p>
+    <h2 class="text-[42px] font-bold text-white mb-6">Bouwproject in Utrecht?</h2>
+    <p class="text-[18px] leading-[28px] mb-10 max-w-[500px] mx-auto" style="color: rgba(255,255,255,0.7);">
+      Neem contact op voor een vrijblijvend gesprek. We reageren binnen 24 uur.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a
+        href="tel:0641258151"
+        class="inline-flex items-center justify-center gap-2 font-bold text-[14px] text-white px-8 py-4 rounded-lg"
+        style="background-color: hsl(211, 62%, 47%);"
+      >
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+        </svg>
+        06 41258151
+      </a>
+      <a
+        href="mailto:info@asp-aannemersbedrijf.nl"
+        class="inline-flex items-center justify-center gap-2 font-bold text-[14px] px-8 py-4 rounded-lg border-2"
+        style="border-color: rgba(255,255,255,0.4); color: white;"
+      >
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        </svg>
+        Email ons
+      </a>
+    </div>
+  </div>
+</section>

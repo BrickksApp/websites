@@ -1,0 +1,44 @@
+---
+const faqs = [
+  {
+    question: "Werken jullie ook in mijn plaats?",
+    answer: "We werken in alle plaatsen tot 60km rond Amsterdam. Veel gemeentes kennen we goed. Stuur je adres — we controleren snel of je in ons werkgebied valt.",
+  },
+  {
+    question: "Moeten we betalen voor verplaatsing?",
+    answer: "Nee, verplaatsingskosten zijn inbegrepen. We zitten goed verdeeld over de regio, dus efficiënte planning is mogelijk.",
+  },
+  {
+    question: "Hoe gaat het met vergunningen in mijn gemeente?",
+    answer: "We regelen alle vergunningen. We kennen de ambtenaren en processen. Dit gaat altijd soepel.",
+  },
+  {
+    question: "Kunnen we ook buiten de regio werken?",
+    answer: "Uitzonderingen zijn mogelijk. Grote projecten kunnen we ook buiten onze standaard regio doen. Bel ons — we kijken altijd mee.",
+  },
+];
+---
+<section class="py-[112px]" style="background-color: hsl(0, 0%, 100%);">
+  <div class="max-w-[800px] mx-auto px-6">
+    <div class="text-center mb-12 reveal">
+      <h2 class="text-[42px] font-semibold" style="color: hsl(220, 19%, 15%);">Veelgestelde Vragen over Ons Werkgebied</h2>
+    </div>
+    <div class="space-y-0 border border-[hsl(210,15%,90%)] rounded-lg overflow-hidden">
+      {faqs.map((faq) => (
+        <details class="group border-b border-[hsl(210,15%,90%)] last:border-b-0">
+          <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none hover:bg-[hsl(210,15%,98%)] transition-colors">
+            <span class="text-[16px] font-semibold" style="color: hsl(220, 19%, 15%);">{faq.question}</span>
+            <span class="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center transition-transform group-open:rotate-45" style="background-color: hsl(211, 62%, 47%);">
+              <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+              </svg>
+            </span>
+          </summary>
+          <div class="px-6 pb-5">
+            <p class="text-[15px] leading-[24px]" style="color: hsl(219, 10%, 45%);">{faq.answer}</p>
+          </div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>

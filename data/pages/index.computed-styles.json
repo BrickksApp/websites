@@ -1,0 +1,672 @@
+{
+  "viewportWidth": 1920,
+  "pageBackground": {
+    "type": "color",
+    "value": "rgb(255, 255, 255)"
+  },
+  "sectionThemes": [
+    {
+      "background": "rgb(255, 255, 255)",
+      "isBackgroundPhoto": true,
+      "overlay": "linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1))",
+      "textColor": "rgb(255, 255, 255)",
+      "headings": [
+        {
+          "tag": "h1",
+          "fontSize": "72px",
+          "fontWeight": "700",
+          "color": "rgb(255, 255, 255)",
+          "text": "Nieuwbouw & renovatie metzekerheid"
+        },
+        {
+          "tag": "h2",
+          "fontSize": "42px",
+          "fontWeight": "400",
+          "color": "rgb(255, 255, 255)",
+          "text": "Recente projecten"
+        },
+        {
+          "tag": "h3",
+          "fontSize": "24px",
+          "fontWeight": "700",
+          "color": "rgb(255, 255, 255)",
+          "text": "Kinderopvang"
+        },
+        {
+          "tag": "h3",
+          "fontSize": "24px",
+          "fontWeight": "700",
+          "color": "rgb(255, 255, 255)",
+          "text": "Appartementen"
+        },
+        {
+          "tag": "h2",
+          "fontSize": "42px",
+          "fontWeight": "400",
+          "color": "rgb(31, 36, 46)",
+          "text": "Kwaliteit van begin tot einde."
+        }
+      ],
+      "bodyStyle": {
+        "fontSize": "18px",
+        "color": "rgba(255, 255, 255, 0.7)",
+        "lineHeight": "28px"
+      },
+      "buttons": [
+        {
+          "color": "rgba(255, 255, 255, 0.8)",
+          "borderRadius": "9999px",
+          "padding": "8px 16px 8px 16px",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "text": "Diensten"
+        },
+        {
+          "backgroundColor": "rgb(46, 117, 195)",
+          "color": "rgb(255, 255, 255)",
+          "padding": "16px 32px 16px 32px",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "text": "Bel Ons: 06 41258151"
+        },
+        {
+          "backgroundColor": "rgb(22, 163, 74)",
+          "color": "rgb(255, 255, 255)",
+          "padding": "16px 32px 16px 32px",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "text": "Doe je aanvraag"
+        }
+      ],
+      "images": [
+        {
+          "displayWidth": 124,
+          "displayHeight": 56,
+          "objectFit": "contain"
+        },
+        {
+          "displayWidth": 1905,
+          "displayHeight": 100000,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 620,
+          "displayHeight": 380,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 620,
+          "displayHeight": 380,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 408,
+          "displayHeight": 192,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 408,
+          "displayHeight": 192,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 408,
+          "displayHeight": 192,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 408,
+          "displayHeight": 192,
+          "objectFit": "cover"
+        }
+      ],
+      "layout": {
+        "containerMaxWidth": "1320px",
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "childCount": 5
+      },
+      "interactionType": "carousel"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "gradient": "linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1))",
+      "textColor": null,
+      "headings": [],
+      "bodyStyle": null,
+      "buttons": [],
+      "layout": {}
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "gradient": "linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2))",
+      "textColor": null,
+      "headings": [],
+      "bodyStyle": null,
+      "buttons": [],
+      "layout": {}
+    },
+    {
+      "background": "rgb(26, 37, 64)",
+      "textColor": "rgb(255, 255, 255)",
+      "headings": [
+        {
+          "tag": "h2",
+          "fontSize": "42px",
+          "fontWeight": "400",
+          "color": "rgb(255, 255, 255)",
+          "text": "Recente projecten"
+        },
+        {
+          "tag": "h3",
+          "fontSize": "24px",
+          "fontWeight": "700",
+          "color": "rgb(255, 255, 255)",
+          "text": "Kinderopvang"
+        },
+        {
+          "tag": "h3",
+          "fontSize": "24px",
+          "fontWeight": "700",
+          "color": "rgb(255, 255, 255)",
+          "text": "Appartementen"
+        }
+      ],
+      "bodyStyle": {
+        "fontSize": "16px",
+        "color": "rgba(255, 255, 255, 0.6)",
+        "lineHeight": "26px"
+      },
+      "buttons": [
+        {
+          "color": "rgb(46, 117, 195)",
+          "border": "1px solid rgb(46, 117, 195)",
+          "padding": "12px 24px 12px 24px",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "text": "Neem contact op"
+        }
+      ],
+      "images": [
+        {
+          "displayWidth": 620,
+          "displayHeight": 380,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 620,
+          "displayHeight": 380,
+          "objectFit": "cover"
+        }
+      ],
+      "layout": {
+        "containerMaxWidth": "1320px",
+        "paddingBlock": "112px 112px",
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "flex-end",
+        "justifyContent": "space-between",
+        "childCount": 2
+      },
+      "interactionType": "carousel"
+    },
+    {
+      "background": "rgba(240, 242, 244, 0.5)",
+      "textColor": "rgb(31, 36, 46)",
+      "headings": [
+        {
+          "tag": "h2",
+          "fontSize": "42px",
+          "fontWeight": "400",
+          "color": "rgb(31, 36, 46)",
+          "text": "Kwaliteit van begin tot einde."
+        },
+        {
+          "tag": "h3",
+          "fontSize": "18px",
+          "fontWeight": "700",
+          "color": "rgb(31, 36, 46)",
+          "text": "Nieuwbouw"
+        },
+        {
+          "tag": "h3",
+          "fontSize": "18px",
+          "fontWeight": "700",
+          "color": "rgb(31, 36, 46)",
+          "text": "Ruwbouw"
+        },
+        {
+          "tag": "h3",
+          "fontSize": "18px",
+          "fontWeight": "700",
+          "color": "rgb(31, 36, 46)",
+          "text": "Renovatie"
+        },
+        {
+          "tag": "h3",
+          "fontSize": "18px",
+          "fontWeight": "700",
+          "color": "rgb(31, 36, 46)",
+          "text": "Aan- & Uitbouw"
+        }
+      ],
+      "bodyStyle": {
+        "fontSize": "14px",
+        "color": "rgb(103, 111, 126)",
+        "lineHeight": "22.75px"
+      },
+      "buttons": [
+        {
+          "color": "rgb(46, 117, 195)",
+          "border": "2px solid rgb(46, 117, 195)",
+          "padding": "12px 24px 12px 24px",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "text": "Alle diensten"
+        }
+      ],
+      "images": [
+        {
+          "displayWidth": 408,
+          "displayHeight": 192,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 408,
+          "displayHeight": 192,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 408,
+          "displayHeight": 192,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 408,
+          "displayHeight": 192,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 408,
+          "displayHeight": 192,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 408,
+          "displayHeight": 192,
+          "objectFit": "cover"
+        }
+      ],
+      "layout": {
+        "containerMaxWidth": "1320px",
+        "paddingBlock": "112px 112px",
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "flex-end",
+        "justifyContent": "space-between",
+        "childCount": 2
+      },
+      "interactionType": "carousel"
+    },
+    {
+      "background": "rgb(26, 37, 64)",
+      "textColor": "rgb(255, 255, 255)",
+      "headings": [
+        {
+          "tag": "h2",
+          "fontSize": "42px",
+          "fontWeight": "400",
+          "color": "rgb(255, 255, 255)",
+          "text": "Van eerste gesprek tot sleuteloverdracht"
+        },
+        {
+          "tag": "h3",
+          "fontSize": "24px",
+          "fontWeight": "400",
+          "color": "rgb(255, 255, 255)",
+          "text": "Heeft u een project te bespreken?"
+        },
+        {
+          "tag": "h4",
+          "fontSize": "16px",
+          "fontWeight": "700",
+          "color": "rgb(255, 255, 255)",
+          "text": "Intake & Planning"
+        },
+        {
+          "tag": "h4",
+          "fontSize": "16px",
+          "fontWeight": "700",
+          "color": "rgb(255, 255, 255)",
+          "text": "Vergunningen & Voorbereiding"
+        },
+        {
+          "tag": "h4",
+          "fontSize": "16px",
+          "fontWeight": "700",
+          "color": "rgb(255, 255, 255)",
+          "text": "Uitvoering & Bouw"
+        }
+      ],
+      "bodyStyle": {
+        "fontSize": "14px",
+        "color": "rgba(255, 255, 255, 0.6)",
+        "lineHeight": "22.75px"
+      },
+      "buttons": [
+        {
+          "backgroundColor": "rgb(46, 117, 195)",
+          "color": "rgb(255, 255, 255)",
+          "padding": "12px 24px 12px 24px",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "text": "Neem contact op"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "padding": "20px 20px 20px 20px",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "text": "01Intake & Planning"
+        }
+      ],
+      "images": [
+        {
+          "displayWidth": 612,
+          "displayHeight": 500,
+          "objectFit": "cover"
+        }
+      ],
+      "layout": {
+        "containerMaxWidth": "1320px",
+        "paddingBlock": "112px 112px",
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "justifyContent": "space-between",
+        "childCount": 2
+      }
+    },
+    {
+      "background": "rgba(240, 242, 244, 0.3)",
+      "textColor": "rgb(31, 36, 46)",
+      "headings": [
+        {
+          "tag": "h2",
+          "fontSize": "36px",
+          "fontWeight": "700",
+          "color": "rgb(31, 36, 46)",
+          "text": "Wat onze klanten zeggen"
+        },
+        {
+          "tag": "h3",
+          "fontSize": "16px",
+          "fontWeight": "700",
+          "color": "rgb(31, 36, 46)",
+          "text": "Top bedrijf"
+        },
+        {
+          "tag": "h3",
+          "fontSize": "16px",
+          "fontWeight": "700",
+          "color": "rgb(31, 36, 46)",
+          "text": "Super tevreden vakkundig en vakwerk afgeleverd!"
+        },
+        {
+          "tag": "h3",
+          "fontSize": "16px",
+          "fontWeight": "700",
+          "color": "rgb(31, 36, 46)",
+          "text": "Zeer tevreden over deze aannemer!"
+        },
+        {
+          "tag": "h3",
+          "fontSize": "16px",
+          "fontWeight": "700",
+          "color": "rgb(31, 36, 46)",
+          "text": "Top en vlot gedaan"
+        }
+      ],
+      "bodyStyle": {
+        "fontSize": "18px",
+        "color": "rgb(103, 111, 126)",
+        "lineHeight": "28px"
+      },
+      "buttons": [
+        {
+          "color": "rgb(46, 117, 195)",
+          "border": "1px solid rgb(46, 117, 195)",
+          "padding": "12px 24px 12px 24px",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "text": "Alle beoordelingen bekijken →"
+        }
+      ],
+      "images": [
+        {
+          "displayWidth": 197,
+          "displayHeight": 64,
+          "objectFit": "contain"
+        }
+      ],
+      "layout": {
+        "containerMaxWidth": "1320px",
+        "paddingBlock": "112px 112px",
+        "display": "grid",
+        "gridTemplateColumns": "408px 408px 408px",
+        "gap": "24px",
+        "childCount": 5
+      }
+    }
+  ],
+  "globalTypography": {
+    "headingFont": "Plus Jakarta Sans",
+    "bodyFont": "Plus Jakarta Sans",
+    "scale": {
+      "h1": {
+        "fontSize": "72px",
+        "fontWeight": "700",
+        "lineHeight": "72px"
+      },
+      "h2": {
+        "fontSize": "42px",
+        "fontWeight": "400",
+        "lineHeight": "40px"
+      },
+      "h3": {
+        "fontSize": "24px",
+        "fontWeight": "700",
+        "lineHeight": "32px"
+      },
+      "h4": {
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "lineHeight": "24px"
+      },
+      "body": {
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "22.75px"
+      }
+    }
+  },
+  "navigation": {
+    "isFullWidth": true,
+    "width": "1905px",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "position": "fixed",
+    "padding": "20px 0px 20px 0px",
+    "logo": {
+      "width": "124px",
+      "height": "56px",
+      "position": "inside-nav",
+      "hasBadge": false
+    },
+    "links": [
+      {
+        "text": "Home",
+        "fontSize": "14px",
+        "fontFamily": "Plus Jakarta Sans",
+        "fontWeight": "500",
+        "color": "rgb(255, 255, 255)",
+        "isButton": true,
+        "buttonStyle": {
+          "backgroundColor": "rgba(255, 255, 255, 0.2)",
+          "borderRadius": "9999px"
+        }
+      },
+      {
+        "text": "Over ons",
+        "fontSize": "14px",
+        "fontFamily": "Plus Jakarta Sans",
+        "fontWeight": "500",
+        "color": "rgba(255, 255, 255, 0.8)"
+      },
+      {
+        "text": "Diensten",
+        "fontSize": "14px",
+        "fontFamily": "Plus Jakarta Sans",
+        "fontWeight": "500",
+        "color": "rgba(255, 255, 255, 0.8)",
+        "hasIcon": true,
+        "hasDropdown": true
+      },
+      {
+        "text": "Werkwijze",
+        "fontSize": "14px",
+        "fontFamily": "Plus Jakarta Sans",
+        "fontWeight": "500",
+        "color": "rgba(255, 255, 255, 0.8)"
+      },
+      {
+        "text": "Werkgebieden",
+        "fontSize": "14px",
+        "fontFamily": "Plus Jakarta Sans",
+        "fontWeight": "500",
+        "color": "rgba(255, 255, 255, 0.8)",
+        "hasIcon": true,
+        "hasDropdown": true
+      },
+      {
+        "text": "Doe je aanvraag",
+        "fontSize": "14px",
+        "fontFamily": "Plus Jakarta Sans",
+        "fontWeight": "700",
+        "color": "rgb(255, 255, 255)",
+        "isButton": true,
+        "buttonStyle": {
+          "backgroundColor": "rgba(46, 117, 195, 0.1)",
+          "border": "2px solid rgba(255, 255, 255, 0.5)"
+        }
+      }
+    ]
+  },
+  "sliders": [],
+  "buttons": [
+    {
+      "color": "rgba(255, 255, 255, 0.8)",
+      "borderRadius": "9999px",
+      "padding": "8px 16px 8px 16px",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "text": "Diensten"
+    },
+    {
+      "backgroundColor": "rgb(46, 117, 195)",
+      "color": "rgb(255, 255, 255)",
+      "padding": "16px 32px 16px 32px",
+      "fontSize": "14px",
+      "fontWeight": "700",
+      "text": "Bel Ons: 06 41258151"
+    },
+    {
+      "backgroundColor": "rgb(22, 163, 74)",
+      "color": "rgb(255, 255, 255)",
+      "padding": "16px 32px 16px 32px",
+      "fontSize": "14px",
+      "fontWeight": "700",
+      "text": "Doe je aanvraag"
+    },
+    {
+      "color": "rgb(46, 117, 195)",
+      "border": "1px solid rgb(46, 117, 195)",
+      "padding": "12px 24px 12px 24px",
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "text": "Neem contact op"
+    },
+    {
+      "color": "rgb(255, 255, 255)",
+      "padding": "20px 20px 20px 20px",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "text": "01Intake & Planning"
+    }
+  ],
+  "videos": [],
+  "footer": {
+    "background": "rgb(255, 255, 255)",
+    "textColor": "rgb(31, 36, 46)",
+    "columns": 4,
+    "linkGroups": [
+      {
+        "heading": "Navigatie",
+        "links": [
+          {
+            "text": "Home",
+            "href": "/"
+          },
+          {
+            "text": "Over ons",
+            "href": "/Overons"
+          },
+          {
+            "text": "Diensten",
+            "href": "#services"
+          },
+          {
+            "text": "Werkwijze",
+            "href": "/Werkwijze"
+          },
+          {
+            "text": "Werkgebieden",
+            "href": "/Werkgebieden"
+          }
+        ]
+      },
+      {
+        "heading": "Diensten",
+        "links": [
+          {
+            "text": "Nieuwbouw",
+            "href": "/diensten/nieuwbouw"
+          },
+          {
+            "text": "Ruwbouw",
+            "href": "/diensten/ruwbouw"
+          },
+          {
+            "text": "Renovatie",
+            "href": "/diensten/renovatie"
+          },
+          {
+            "text": "Aan- & Uitbouw",
+            "href": "/diensten/aan-uitbouw"
+          },
+          {
+            "text": "Afbouw",
+            "href": "/diensten/afbouw"
+          }
+        ]
+      }
+    ]
+  },
+  "socialLinks": null,
+  "hoverStyles": null,
+  "cssVariables": {
+    "--font-sans": "\"Plus Jakarta Sans\", sans-serif",
+    "--radius": "0rem"
+  },
+  "externalFonts": []
+}

@@ -1,0 +1,57 @@
+---
+const steps = [
+  {
+    number: "01",
+    title: "Intake & Planning",
+    description: "We luisteren naar jouw wensen, budget en timeline. We maken foto's, metingen en stellen een duidelijk plan op.",
+  },
+  {
+    number: "02",
+    title: "Offerte & Voorbereiding",
+    description: "Je krijgt een gedetailleerde offerte met realistische prijzen. We regelen alle vergunningen en plannen de start.",
+  },
+  {
+    number: "03",
+    title: "Bouw & Toezicht",
+    description: "Ons team gaat aan het werk. Je hebt één vast contactpersoon die je wekelijks op de hoogte houdt.",
+  },
+  {
+    number: "04",
+    title: "Oplevering & Garantie",
+    description: "Eindcontrole, intake van de werken, en dan: 10 jaar garantie. Klaar. Gedaan. Gegarandeerd.",
+  },
+];
+---
+<section class="py-[112px]" style="background-color: hsl(0, 0%, 100%);">
+  <div class="max-w-[1320px] mx-auto px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div class="reveal-right order-2 lg:order-1">
+        <img
+          src="https://pagesmith-cdn.com/ba5d94c5/images/c2b499044_generated_image-1024.webp"
+          alt="Team expertise"
+          class="w-full rounded-lg object-cover"
+          style="max-height: 520px;"
+        />
+      </div>
+      <div class="order-1 lg:order-2">
+        <div class="reveal mb-10">
+          <span class="inline-block text-[hsl(211,62%,47%)] text-sm font-semibold uppercase tracking-widest mb-3">Hoe We Werken</span>
+          <h2 class="text-[42px] font-semibold leading-[1.2]" style="color: hsl(220, 19%, 15%);">Van Idee tot Oplevering</h2>
+        </div>
+        <div class="space-y-8">
+          {steps.map((step, i) => (
+            <div class={`flex gap-6 reveal reveal-delay-${i + 1}`}>
+              <div class="flex-shrink-0">
+                <span class="text-[42px] font-bold leading-none" style="color: hsl(211, 62%, 47%);">{step.number}</span>
+              </div>
+              <div class="pt-2">
+                <h3 class="text-[18px] font-bold mb-2" style="color: hsl(220, 19%, 15%);">{step.title}</h3>
+                <p class="text-[16px] leading-[26px]" style="color: hsl(219, 10%, 45%);">{step.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

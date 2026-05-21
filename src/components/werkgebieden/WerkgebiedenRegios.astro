@@ -1,0 +1,69 @@
+---
+const regions = [
+  {
+    title: "Zaanstreek & Noord-Holland",
+    description: "Zaandam, Wormerveer, Krommenie, Assendelft en omgeving — hier voeren we regelmatig nieuwbouw, renovatie en ruwbouwwerken uit.",
+    cities: ["Amsterdam", "Zaandam", "Wormerveer", "Krommenie", "Assendelft", "Westzaan", "Zaandijk"],
+    slug: "/werkgebieden/zaanstreek/",
+  },
+  {
+    title: "Haarlem, Bloemendaal & Kennemerland",
+    description: "Haarlem, Bloemendaal, Zandvoort, Heemstede — we bouwen sinds 25 jaar in deze welgestelde regio met veel renovaties en moderniseringen.",
+    cities: ["Haarlem", "Bloemendaal", "Zandvoort", "Heemstede", "Overveen", "Vogelenzang", "Hillegom", "Lisse"],
+    slug: "/werkgebieden/haarlem/",
+  },
+  {
+    title: "Utrecht & Utrechtse Heuvelrug",
+    description: "Utrecht, De Bilt, Bunnik — we voeren nieuwbouw, renovatie en zakelijke projecten uit in deze groeiende regio.",
+    cities: ["Utrecht", "Bunnik", "De Bilt", "Rijnswijk", "Harmelen", "Vleuten-De Meern"],
+    slug: "/werkgebieden/utrecht/",
+  },
+  {
+    title: "Gouda & Zuid-Holland",
+    description: "Gouda, Waddinxveen, Nieuwerkerk — alle projecten van ruwbouw tot afbouw in de Goudse regio.",
+    cities: ["Gouda", "Waddinxveen", "Nieuwerkerk aan den IJssel", "Reeuwijk", "Bergambacht", "Moordrecht", "Ter Aar", "Bodegraven"],
+    slug: "/werkgebieden/gouda/",
+  },
+  {
+    title: "Almeer, Gooi & Vechtstreek",
+    description: "Aalsmeer, Uithoorn, Hilversum, Laren — moderne bouwprojecten en renovaties in groeiende woongebieden.",
+    cities: ["Aalsmeer", "Uithoorn", "De Ronde Venen", "Abcoude", "Duivendrecht", "Weesp", "Muiden", "Bussum"],
+    slug: "/werkgebieden/almeer/",
+  },
+  {
+    title: "Gooi, Hilversum & Omgeving",
+    description: "Hilversum, Baarn, Bussum, Soest — exclusieve woningbouw en renovaties in villawijken en landhuizen.",
+    cities: ["Hilversum", "Laren", "Baarn", "Huizen", "Gooise Meren", "Blaricum", "Eemnes", "Soest"],
+    slug: "/werkgebieden/hilversum/",
+  },
+  {
+    title: "Waterland & Noord-Amsterdam",
+    description: "Volendam, Marken, Edam, Purmerend — pittoreske dorpen waar we vakkundig bouwen met respect voor historisch karakter.",
+    cities: ["Volendam", "Marken", "Edam", "Purmerend", "Waterland", "Durgerdam", "Ilpendam", "Monnickendam"],
+    slug: "/werkgebieden/waterland/",
+  },
+];
+---
+<section class="py-[112px]" style="background: rgba(240, 242, 244, 0.5);">
+  <div class="max-w-[1320px] mx-auto px-6">
+    <div class="text-center mb-12 reveal">
+      <h2 class="text-[42px] font-semibold mb-3" style="color: hsl(220, 19%, 15%);">Bouwwerken in jouw Regio</h2>
+      <p class="text-[18px]" style="color: hsl(219, 10%, 45%);">
+        60 kilometer radius rond Amsterdam — alle gebieden waar we actief zijn
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {regions.map((region, i) => (
+        <div class={`bg-white rounded-lg p-6 border border-[hsl(210,15%,90%)] hover:shadow-md transition-shadow reveal reveal-delay-${(i % 3) + 1}`}>
+          <h3 class="text-[18px] font-bold mb-2" style="color: hsl(220, 19%, 15%);">{region.title}</h3>
+          <p class="text-[14px] leading-[22px] mb-4" style="color: hsl(219, 10%, 45%);">{region.description}</p>
+          <div class="flex flex-wrap gap-2">
+            {region.cities.map((city) => (
+              <span class="text-[12px] font-medium px-3 py-1 rounded-full" style="background-color: hsl(211, 62%, 94%); color: hsl(211, 62%, 37%);">{city}</span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,49 @@
+---
+const standards = [
+  {
+    title: "Grondige Planning",
+    description: "We plannen elk detail vooraf, zodat er geen onaangename verrassingen zijn.",
+  },
+  {
+    title: "Kwaliteitsbewaking",
+    description: "Bij elke bouwfase controleren we de kwaliteit met oog voor detail.",
+  },
+  {
+    title: "Transparante Communicatie",
+    description: "Je bent altijd op de hoogte van de voortgang via je vaste aannemer.",
+  },
+  {
+    title: "Vakkundige Uitvoering",
+    description: "Onze ervaren teams werken volgens bouwstandaarden en met vakmanschap.",
+  },
+  {
+    title: "Veiligheid op de Bouwplaats",
+    description: "Alle ARBO-maatregelen zijn van toepassing en worden strikt nageleefd.",
+  },
+  {
+    title: "Nazorg & Garantie",
+    description: "Na oplevering zijn we nog steeds voor je beschikbaar — 10 jaar garantie.",
+  },
+];
+---
+<section class="py-[112px]" style="background: rgba(240, 242, 244, 0.5);">
+  <div class="max-w-[1320px] mx-auto px-6">
+    <div class="text-center mb-12 reveal">
+      <span class="inline-block text-[hsl(211,62%,47%)] text-sm font-semibold uppercase tracking-widest mb-3">Onze Standaarden</span>
+      <h2 class="text-[42px] font-semibold" style="color: hsl(220, 19%, 15%);">Kwaliteit in Alles</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {standards.map((std, i) => (
+        <div class={`bg-white rounded-lg p-8 border border-[hsl(210,15%,90%)] hover:shadow-md transition-shadow reveal reveal-delay-${(i % 3) + 1}`}>
+          <div class="w-12 h-12 rounded-full flex items-center justify-center mb-4" style="background-color: hsl(211, 62%, 47%);">
+            <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+            </svg>
+          </div>
+          <h3 class="text-[18px] font-bold mb-3" style="color: hsl(220, 19%, 15%);">{std.title}</h3>
+          <p class="text-[14px] leading-[22.75px]" style="color: hsl(219, 10%, 45%);">{std.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,120 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import WerkgebiedHero from '../../components/werkgebieden/WerkgebiedHero.astro';
+import WerkgebiedDiensten from '../../components/werkgebieden/WerkgebiedDiensten.astro';
+import WerkgebiedVoordelen from '../../components/werkgebieden/WerkgebiedVoordelen.astro';
+import WerkgebiedFAQ from '../../components/werkgebieden/WerkgebiedFAQ.astro';
+import WerkgebiedCTA from '../../components/werkgebieden/WerkgebiedCTA.astro';
+
+const diensten = [
+  {
+    name: 'Villa renovatie',
+    description: 'Exclusieve villarenovatie op topniveau met premium materialen en vakmanschap.',
+    icon: 'M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z',
+  },
+  {
+    name: 'Landhuis werk',
+    description: 'Landhuizen restauratie met authenticiteit en respect voor historische details.',
+    icon: 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4',
+  },
+  {
+    name: 'Architectuur',
+    description: 'Avant-garde ontwerp en bouw — moderne architectuur die aansluit bij het Gooise karakter.',
+    icon: 'M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z',
+  },
+  {
+    name: 'Interieur',
+    description: 'Luxe binnenafwerking naar wens — badkamer, keuken, woonkamer op topniveau.',
+    icon: 'M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z',
+  },
+  {
+    name: 'Duurzaam upgrade',
+    description: 'Moderne energiesystemen in historische panden — isolatie, zonnepanelen, warmtepompen.',
+    icon: 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z',
+  },
+  {
+    name: 'Project management',
+    description: 'Professioneel beheer van complexe projecten — planning, coördinatie en oplevering.',
+    icon: 'M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4',
+  },
+];
+
+const voordelen = [
+  {
+    title: 'Expertise in exclusief segment',
+    description: 'Tientallen villa\'s en landhuizen in Hilversum en het Gooi gerenoveerd. Premium materialen, premium vakmanschap — dit is ons specialisme.',
+  },
+  {
+    title: 'Kennis van de Gooise markt',
+    description: 'We begrijpen de bouw- en erfgoedregels van de gemeente Hilversum en Gooise Meren. Geen verrassingen, wel een soepel traject.',
+  },
+  {
+    title: 'Discretie & vertrouwen',
+    description: 'In het exclusieve segment is privacy essentieel. We werken discreet en professioneel — altijd met respect voor u en uw omgeving.',
+  },
+  {
+    title: '10 jaar garantie',
+    description: 'Al ons werk is BouwGarant gecertificeerd met 10 jaar structurele garantie. U investeert met zekerheid in uw waardevolle woning.',
+  },
+];
+
+const faqs = [
+  {
+    question: 'Werken jullie in Hilversum en Gooise Meren?',
+    answer: 'Ja, Hilversum is één van onze premium werkgebieden. Villa\'s, landhuizen, exclusieve projecten — dit is ons niveau. We zijn actief in heel Gooi & Vechtstreek, inclusief Laren, Blaricum, Bussum en omliggende gemeenten.',
+  },
+  {
+    question: 'Wat is jullie ervaring met Gooise villa\'s?',
+    answer: 'We hebben meer dan 25 jaar ervaring met exclusieve woningen in het Gooi. Van grootschalige renovaties tot delicate restauraties — ons team kent de bijzondere architectuur en eisen van Gooise villa\'s.',
+  },
+  {
+    question: 'Hoe gaan jullie om met erfgoed in Hilversum?',
+    answer: 'Hilversum heeft veel beschermde monumenten en karaktervolle panden. Wij werken nauw samen met erfgoeddeskundigen en de gemeente om authenticiteit te waarborgen, met respect voor de bouwhistorie.',
+  },
+  {
+    question: 'Bieden jullie landhuisrenovatie aan?',
+    answer: 'Absoluut. Landhuisrenovatie is een van onze specialiteiten. We restaureren authentieke details zoals houten balken, stucwerk en historische gevels, gecombineerd met moderne comfort en installaties.',
+  },
+  {
+    question: 'Welke prijsklasse voor Hilversum-projecten?',
+    answer: 'We werken in het premium segment en bieden maatwerk oplossingen. Onze offertes zijn transparant en volledig — geen verborgen kosten. Neem contact op voor een vrijblijvende prijsindicatie.',
+  },
+  {
+    question: 'Kunnen jullie vertrouwelijk werken?',
+    answer: 'Ja, discretie is vanzelfsprekend in ons werk. We behandelen alle projectinformatie vertrouwelijk en respecteren de privacy van onze opdrachtgevers volledig.',
+  },
+];
+---
+
+<BaseLayout
+  title="Luxe Renovatie Hilversum | Villa's & Landhuizen | A.S.P Aannemersbedrijf"
+  description="A.S.P Aannemersbedrijf specialiseert zich in exclusieve villa- en landhuisrenovaties in Hilversum en Gooi & Vechtstreek. Meer dan 25 jaar premium vakmanschap."
+>
+  <WerkgebiedHero
+    title="Exclusieve bouw in Hilversum"
+    subtitle="Villa's en landhuizen met topkwaliteit — dit is ons Hilversum. Premium vakmanschap voor het meest exclusieve segment van de regio."
+    location="Hilversum, Gooi & Vechtstreek"
+    image="https://pagesmith-cdn.com/ba5d94c5/images/dd7316707_generated_image-1024.webp"
+    imageAlt="Hilversum villa renovatie"
+    ctaText="Consultatie aanvragen"
+    ctaHref="#footer"
+  />
+
+  <WerkgebiedDiensten
+    heading="Premium diensten Hilversum"
+    diensten={diensten}
+  />
+
+  <WerkgebiedVoordelen
+    heading="Waarom A.S.P voor uw Hilversum project?"
+    voordelen={voordelen}
+  />
+
+  <WerkgebiedFAQ faqs={faqs} />
+
+  <WerkgebiedCTA
+    city="Hilversum"
+    heading="Exclusief project in Hilversum?"
+    subtext="Laat ons uw visie realiseren — in vertrouwen en luxe."
+  />
+</BaseLayout>
